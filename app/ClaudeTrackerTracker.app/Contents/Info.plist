@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>ClaudeTrackerTracker</string>
+    <string>claudeusagetrackertracker</string>
     <key>CFBundleDisplayName</key>
-    <string>Claude Tracker Tracker</string>
+    <string>claudeusagetrackertracker</string>
     <key>CFBundleIdentifier</key>
-    <string>com.claudetrackertracker.app</string>
+    <string>com.claudeusagetrackertracker.app</string>
     <key>CFBundleVersion</key>
     <string>1.0</string>
     <key>CFBundleShortVersionString</key>

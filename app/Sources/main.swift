@@ -4,6 +4,8 @@ import Foundation
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem!
     var trackerCount: Int = 0
+    var totalStars: Int = 0
+    var lastUpdated: String = ""
     var trackers: [(name: String, url: String, stars: Int)] = []
 
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -15,14 +17,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         fetchTrackerCount()
 
-        // Refresh every 30 minutes
-        Timer.scheduledTimer(withTimeInterval: 1800, repeats: true) { _ in
+        // Refresh every hour
+        Timer.scheduledTimer(withTimeInterval: 3600, repeats: true) { _ in
             self.fetchTrackerCount()
         }
     }
 
     func fetchTrackerCount() {
-        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudetrackertracker/master/trackers.json"
+        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/trackers.json"
         guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -37,6 +39,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 return
             }
 
+            let stars = meta["total_stars"] as? Int ?? 0
+            let updated = meta["last_updated"] as? String ?? ""
+
             let parsed = trackersArray.compactMap { tracker -> (String, String, Int)? in
                 guard let name = tracker["name"] as? String,
                       let url = tracker["url"] as? String,
@@ -46,6 +51,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
             DispatchQueue.main.async {
                 self.trackerCount = count
+                self.totalStars = stars
+                self.lastUpdated = updated
                 self.trackers = parsed
                 self.statusItem.button?.title = "📊 \(count)"
                 self.buildMenu()
@@ -53,26 +60,38 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }.resume()
     }
 
+    func formatNumber(_ n: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter.string(from: NSNumber(value: n)) ?? "\(n)"
+    }
+
     func buildMenu() {
         let menu = NSMenu()
 
-        let header = NSMenuItem(title: "Claude Tracker Tracker", action: nil, keyEquivalent: "")
+        // Header
+        let header = NSMenuItem(title: "claudeusagetrackertracker", action: nil, keyEquivalent: "")
         header.isEnabled = false
         menu.addItem(header)
 
-        let countItem = NSMenuItem(title: "\(trackerCount) trackers tracked", action: nil, keyEquivalent: "")
-        countItem.isEnabled = false
-        menu.addItem(countItem)
+        menu.addItem(NSMenuItem.separator())
+
+        // Stats
+        let statsItem = NSMenuItem(title: "\(trackerCount) Trackers  ·  \(formatNumber(totalStars)) ⭐", action: nil, keyEquivalent: "")
+        statsItem.isEnabled = false
+        menu.addItem(statsItem)
 
         menu.addItem(NSMenuItem.separator())
 
-        let topLabel = NSMenuItem(title: "Top Trackers:", action: nil, keyEquivalent: "")
+        // Top 5 Trackers
+        let topLabel = NSMenuItem(title: "TOP TRACKERS", action: nil, keyEquivalent: "")
         topLabel.isEnabled = false
         menu.addItem(topLabel)
 
-        for tracker in trackers.prefix(10) {
+        for (index, tracker) in trackers.prefix(5).enumerated() {
+            let starText = formatNumber(tracker.stars)
             let item = NSMenuItem(
-                title: "  \(tracker.name) (\(tracker.stars)⭐)",
+                title: "\(index + 1). \(tracker.name)  ·  \(starText)",
                 action: #selector(openTracker(_:)),
                 keyEquivalent: ""
             )
@@ -83,12 +102,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         menu.addItem(NSMenuItem.separator())
 
+        // Last updated
+        if !lastUpdated.isEmpty {
+            let updatedItem = NSMenuItem(title: "Updated: \(lastUpdated)", action: nil, keyEquivalent: "")
+            updatedItem.isEnabled = false
+            menu.addItem(updatedItem)
+        }
+
+        // View All
         let viewAll = NSMenuItem(title: "View All on GitHub", action: #selector(openRepo), keyEquivalent: "")
         viewAll.target = self
         menu.addItem(viewAll)
 
         menu.addItem(NSMenuItem.separator())
 
+        // Quit
         let quitItem = NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
@@ -104,7 +132,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func openRepo() {
-        if let url = URL(string: "https://github.com/rdyplayerB/claudetrackertracker") {
+        if let url = URL(string: "https://github.com/rdyplayerB/claudeusagetrackertracker") {
             NSWorkspace.shared.open(url)
         }
     }

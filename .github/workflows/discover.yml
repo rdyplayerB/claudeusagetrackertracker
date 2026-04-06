@@ -30,9 +30,13 @@ jobs:
           # Get existing repos
           jq -r '.trackers[].url' trackers.json > /tmp/existing.txt
 
-          # Find new repos (minimum 2 stars to filter noise)
+          # Get excluded repos
+          jq -r '.[] | "https://github.com/\(.)"' excluded.json > /tmp/excluded.txt 2>/dev/null || touch /tmp/excluded.txt
+
+          # Find new repos (minimum 2 stars, not in existing or excluded)
           jq -r --slurpfile existing <(jq -R . /tmp/existing.txt | jq -s .) \
-            '[.[] | select(.stargazersCount >= 2) | select(.url as $u | $existing[0] | index($u) | not)]' \
+                --slurpfile excluded <(jq -R . /tmp/excluded.txt | jq -s .) \
+            '[.[] | select(.stargazersCount >= 2) | select(.url as $u | $existing[0] | index($u) | not) | select(.url as $u | $excluded[0] | index($u) | not)]' \
             /tmp/all_results.json > /tmp/new_trackers.json
 
           # Check if we found anything new
