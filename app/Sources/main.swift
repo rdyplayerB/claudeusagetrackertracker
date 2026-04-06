@@ -1,29 +1,46 @@
 import AppKit
-import Foundation
+import SwiftUI
 
-class AppDelegate: NSObject, NSApplicationDelegate {
-    var statusItem: NSStatusItem!
-    var trackerCount: Int = 0
-    var totalStars: Int = 0
-    var lastUpdated: String = ""
-    var trackers: [(name: String, url: String, stars: Int)] = []
+struct Tracker: Identifiable {
+    let id = UUID()
+    let name: String
+    let url: String
+    let stars: Int
+}
 
-    func applicationDidFinishLaunching(_ notification: Notification) {
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+struct HistoryEntry {
+    let date: String
+    let count: Int
+    let stars: Int
+    let new: Int
+}
 
-        if let button = statusItem.button {
-            button.title = "..."
-        }
+class AppState: ObservableObject {
+    @Published var trackerCount: Int = 0
+    @Published var totalStars: Int = 0
+    @Published var trackers: [Tracker] = []
+    @Published var history: [HistoryEntry] = []
+    @Published var isLoading: Bool = true
 
-        fetchTrackerCount()
-
-        // Refresh every hour
-        Timer.scheduledTimer(withTimeInterval: 3600, repeats: true) { _ in
-            self.fetchTrackerCount()
-        }
+    var weeklyNew: Int {
+        history.suffix(7).reduce(0) { $0 + $1.new }
     }
 
-    func fetchTrackerCount() {
+    var weeklyData: [Int] {
+        let last7 = Array(history.suffix(7))
+        if last7.isEmpty { return Array(repeating: 0, count: 7) }
+        // Pad to 7 days if less
+        let padded = Array(repeating: HistoryEntry(date: "", count: 0, stars: 0, new: 0), count: max(0, 7 - last7.count)) + last7
+        return padded.map { $0.new }
+    }
+
+    func fetchData() {
+        isLoading = true
+        fetchTrackers()
+        fetchHistory()
+    }
+
+    func fetchTrackers() {
         let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/trackers.json"
         guard let url = URL(string: urlString) else { return }
 
@@ -34,28 +51,49 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                   let count = meta["total_count"] as? Int,
                   let trackersArray = json["trackers"] as? [[String: Any]] else {
                 DispatchQueue.main.async {
-                    self.statusItem.button?.title = "??"
+                    self.isLoading = false
                 }
                 return
             }
 
             let stars = meta["total_stars"] as? Int ?? 0
-            let updated = meta["last_updated"] as? String ?? ""
-
-            let parsed = trackersArray.compactMap { tracker -> (String, String, Int)? in
+            let parsed = trackersArray.compactMap { tracker -> Tracker? in
                 guard let name = tracker["name"] as? String,
                       let url = tracker["url"] as? String,
                       let stars = tracker["stars"] as? Int else { return nil }
-                return (name, url, stars)
+                return Tracker(name: name, url: url, stars: stars)
             }
 
             DispatchQueue.main.async {
                 self.trackerCount = count
                 self.totalStars = stars
-                self.lastUpdated = updated
                 self.trackers = parsed
-                self.statusItem.button?.title = "📊 \(count)"
-                self.buildMenu()
+                self.isLoading = false
+            }
+        }.resume()
+    }
+
+    func fetchHistory() {
+        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/history.json"
+        guard let url = URL(string: urlString) else { return }
+
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                  let entries = json["entries"] as? [[String: Any]] else {
+                return
+            }
+
+            let parsed = entries.compactMap { entry -> HistoryEntry? in
+                guard let date = entry["date"] as? String,
+                      let count = entry["count"] as? Int,
+                      let stars = entry["stars"] as? Int,
+                      let new = entry["new"] as? Int else { return nil }
+                return HistoryEntry(date: date, count: count, stars: stars, new: new)
+            }
+
+            DispatchQueue.main.async {
+                self.history = parsed
             }
         }.resume()
     }
@@ -65,82 +103,214 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         formatter.numberStyle = .decimal
         return formatter.string(from: NSNumber(value: n)) ?? "\(n)"
     }
+}
 
-    func buildMenu() {
-        let menu = NSMenu()
+struct PopoverView: View {
+    @ObservedObject var state: AppState
+    @Environment(\.colorScheme) var colorScheme
 
-        // Header
-        let header = NSMenuItem(title: "claudeusagetrackertracker", action: nil, keyEquivalent: "")
-        header.isEnabled = false
-        menu.addItem(header)
-
-        menu.addItem(NSMenuItem.separator())
-
-        // Stats
-        let statsItem = NSMenuItem(title: "\(trackerCount) Trackers  ·  \(formatNumber(totalStars)) ⭐", action: nil, keyEquivalent: "")
-        statsItem.isEnabled = false
-        menu.addItem(statsItem)
-
-        menu.addItem(NSMenuItem.separator())
-
-        // Top 5 Trackers
-        let topLabel = NSMenuItem(title: "TOP TRACKERS", action: nil, keyEquivalent: "")
-        topLabel.isEnabled = false
-        menu.addItem(topLabel)
-
-        for (index, tracker) in trackers.prefix(5).enumerated() {
-            let starText = formatNumber(tracker.stars)
-            let item = NSMenuItem(
-                title: "\(index + 1). \(tracker.name)  ·  \(starText)",
-                action: #selector(openTracker(_:)),
-                keyEquivalent: ""
-            )
-            item.target = self
-            item.representedObject = tracker.url
-            menu.addItem(item)
-        }
-
-        menu.addItem(NSMenuItem.separator())
-
-        // Last updated
-        if !lastUpdated.isEmpty {
-            let updatedItem = NSMenuItem(title: "Updated: \(lastUpdated)", action: nil, keyEquivalent: "")
-            updatedItem.isEnabled = false
-            menu.addItem(updatedItem)
-        }
-
-        // View All
-        let viewAll = NSMenuItem(title: "View All on GitHub", action: #selector(openRepo), keyEquivalent: "")
-        viewAll.target = self
-        menu.addItem(viewAll)
-
-        menu.addItem(NSMenuItem.separator())
-
-        // Quit
-        let quitItem = NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q")
-        quitItem.target = self
-        menu.addItem(quitItem)
-
-        statusItem.menu = menu
+    var cardBackground: Color {
+        colorScheme == .dark ? Color(white: 0.17) : Color(white: 0.94)
     }
 
-    @objc func openTracker(_ sender: NSMenuItem) {
-        if let urlString = sender.representedObject as? String,
-           let url = URL(string: urlString) {
-            NSWorkspace.shared.open(url)
-        }
+    var secondaryText: Color {
+        colorScheme == .dark ? Color(white: 0.56) : Color(white: 0.45)
     }
 
-    @objc func openRepo() {
-        if let url = URL(string: "https://github.com/rdyplayerB/claudeusagetrackertracker") {
-            NSWorkspace.shared.open(url)
-        }
-    }
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            // Header
+            HStack {
+                Text("Claude Usage Tracker Tracker")
+                    .font(.system(size: 14, weight: .semibold))
+                Spacer()
+                Button(action: { state.fetchData() }) {
+                    Image(systemName: "arrow.clockwise")
+                        .foregroundColor(secondaryText)
+                }
+                .buttonStyle(.plain)
+            }
 
-    @objc func quit() {
-        NSApplication.shared.terminate(nil)
+            // Stats Cards
+            HStack(spacing: 12) {
+                // Trackers Card
+                VStack(spacing: 4) {
+                    Text("\(state.trackerCount)")
+                        .font(.system(size: 32, weight: .bold))
+                        .foregroundColor(.orange)
+                    Text("Trackers")
+                        .font(.system(size: 12))
+                        .foregroundColor(secondaryText)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(14)
+                .background(cardBackground)
+                .cornerRadius(10)
+
+                // Stars Card
+                VStack(spacing: 4) {
+                    Text(state.formatNumber(state.totalStars))
+                        .font(.system(size: 32, weight: .bold))
+                        .foregroundColor(.green)
+                    Text("Stars")
+                        .font(.system(size: 12))
+                        .foregroundColor(secondaryText)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(14)
+                .background(cardBackground)
+                .cornerRadius(10)
+            }
+
+            // Top Trackers
+            VStack(alignment: .leading, spacing: 6) {
+                Text("TOP TRACKERS")
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundColor(secondaryText)
+
+                ForEach(Array(state.trackers.prefix(5).enumerated()), id: \.element.id) { index, tracker in
+                    Button(action: {
+                        if let url = URL(string: tracker.url) {
+                            NSWorkspace.shared.open(url)
+                        }
+                    }) {
+                        HStack {
+                            HStack(spacing: 4) {
+                                if index == 0 {
+                                    Text("🏆")
+                                        .font(.system(size: 12))
+                                }
+                                Text(tracker.name)
+                                    .font(.system(size: 12))
+                                    .lineLimit(1)
+                            }
+                            Spacer()
+                            HStack(spacing: 2) {
+                                Text(state.formatNumber(tracker.stars))
+                                    .font(.system(size: 12))
+                                    .foregroundColor(index == 0 ? .orange : secondaryText)
+                                if index == 0 {
+                                    Text("⭐")
+                                        .font(.system(size: 10))
+                                }
+                            }
+                        }
+                        .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+
+            Divider()
+
+            // This Week Chart
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Text("This Week")
+                        .font(.system(size: 10, weight: .semibold))
+                        .foregroundColor(secondaryText)
+                    Spacer()
+                    Text("+\(state.weeklyNew) new")
+                        .font(.system(size: 10, weight: .semibold))
+                        .foregroundColor(.green)
+                }
+
+                HStack(alignment: .bottom, spacing: 4) {
+                    let data = state.weeklyData
+                    let maxVal = max(data.max() ?? 1, 1)
+                    ForEach(0..<7, id: \.self) { i in
+                        let height = CGFloat(data[i]) / CGFloat(maxVal) * 40
+                        let barHeight = max(height, data[i] > 0 ? 8 : 4)
+                        let isToday = i == 6
+                        RoundedRectangle(cornerRadius: 2)
+                            .fill(isToday && data[i] > 0 ? Color.green : (colorScheme == .dark ? Color(white: 0.23) : Color(white: 0.8)))
+                            .frame(height: barHeight)
+                    }
+                }
+                .frame(height: 40)
+            }
+
+            // Footer
+            Button(action: {
+                if let url = URL(string: "https://github.com/rdyplayerB/claudeusagetrackertracker") {
+                    NSWorkspace.shared.open(url)
+                }
+            }) {
+                HStack {
+                    Spacer()
+                    Text("View all \(state.trackerCount) on GitHub →")
+                        .font(.system(size: 12))
+                        .foregroundColor(.blue)
+                    Spacer()
+                }
+            }
+            .buttonStyle(.plain)
+            .padding(.top, 4)
+        }
+        .padding(16)
+        .frame(width: 300)
     }
 }
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    var statusItem: NSStatusItem!
+    var popover: NSPopover!
+    var state = AppState()
+    var eventMonitor: Any?
+
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+
+        if let button = statusItem.button {
+            button.title = "📊 ..."
+            button.action = #selector(togglePopover)
+            button.target = self
+        }
+
+        popover = NSPopover()
+        popover.contentSize = NSSize(width: 300, height: 400)
+        popover.behavior = .transient
+        popover.contentViewController = NSHostingController(rootView: PopoverView(state: state))
+
+        state.fetchData()
+
+        // Update button title when data loads
+        state.$trackerCount.sink { [weak self] count in
+            DispatchQueue.main.async {
+                if count > 0 {
+                    self?.statusItem.button?.title = "📊 \(count)"
+                }
+            }
+        }.store(in: &cancellables)
+
+        // Refresh every hour
+        Timer.scheduledTimer(withTimeInterval: 3600, repeats: true) { [weak self] _ in
+            self?.state.fetchData()
+        }
+
+        // Close popover when clicking outside
+        eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown]) { [weak self] _ in
+            if let popover = self?.popover, popover.isShown {
+                popover.performClose(nil)
+            }
+        }
+    }
+
+    var cancellables = Set<AnyCancellable>()
+
+    @objc func togglePopover() {
+        if let button = statusItem.button {
+            if popover.isShown {
+                popover.performClose(nil)
+            } else {
+                popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
+                popover.contentViewController?.view.window?.makeKey()
+            }
+        }
+    }
+}
+
+import Combine
 
 let app = NSApplication.shared
 let delegate = AppDelegate()
