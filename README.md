@@ -15,7 +15,7 @@
 
 ## Why?
 
-Claude usage trackers are multiplying faster than Claude can count them. So naturally, we built a tracker to track the trackers. It's trackers all the way down.
+Why not.
 
 ## Leaderboard
 

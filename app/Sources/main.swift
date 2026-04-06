@@ -105,6 +105,56 @@ class AppState: ObservableObject {
     }
 }
 
+struct TrackerRow: View {
+    let tracker: Tracker
+    let index: Int
+    let formatNumber: (Int) -> String
+    let secondaryText: Color
+    let hoverBackground: Color
+
+    @State private var isHovered = false
+
+    var body: some View {
+        Button(action: {
+            if let url = URL(string: tracker.url) {
+                NSWorkspace.shared.open(url)
+            }
+        }) {
+            HStack {
+                HStack(spacing: 4) {
+                    if index == 0 {
+                        Text("🏆")
+                            .font(.system(size: 12))
+                    }
+                    Text(tracker.name)
+                        .font(.system(size: 12))
+                        .lineLimit(1)
+                        .foregroundColor(isHovered ? .blue : .primary)
+                }
+                Spacer()
+                HStack(spacing: 2) {
+                    Text(formatNumber(tracker.stars))
+                        .font(.system(size: 12))
+                        .foregroundColor(index == 0 ? .orange : secondaryText)
+                    if index == 0 {
+                        Text("⭐")
+                            .font(.system(size: 10))
+                    }
+                }
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(isHovered ? hoverBackground : Color.clear)
+            .cornerRadius(6)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .onHover { hovering in
+            isHovered = hovering
+        }
+    }
+}
+
 struct PopoverView: View {
     @ObservedObject var state: AppState
     @Environment(\.colorScheme) var colorScheme
@@ -169,35 +219,13 @@ struct PopoverView: View {
                     .foregroundColor(secondaryText)
 
                 ForEach(Array(state.trackers.prefix(5).enumerated()), id: \.element.id) { index, tracker in
-                    Button(action: {
-                        if let url = URL(string: tracker.url) {
-                            NSWorkspace.shared.open(url)
-                        }
-                    }) {
-                        HStack {
-                            HStack(spacing: 4) {
-                                if index == 0 {
-                                    Text("🏆")
-                                        .font(.system(size: 12))
-                                }
-                                Text(tracker.name)
-                                    .font(.system(size: 12))
-                                    .lineLimit(1)
-                            }
-                            Spacer()
-                            HStack(spacing: 2) {
-                                Text(state.formatNumber(tracker.stars))
-                                    .font(.system(size: 12))
-                                    .foregroundColor(index == 0 ? .orange : secondaryText)
-                                if index == 0 {
-                                    Text("⭐")
-                                        .font(.system(size: 10))
-                                }
-                            }
-                        }
-                        .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
+                    TrackerRow(
+                        tracker: tracker,
+                        index: index,
+                        formatNumber: state.formatNumber,
+                        secondaryText: secondaryText,
+                        hoverBackground: cardBackground
+                    )
                 }
             }
 
