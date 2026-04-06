@@ -26,6 +26,19 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-tracker](https://github.com/DSado88/claude-tracker) | 2 | tui | Multi-account Claude usage tracker TUI (Rust/ratatui) |
 | [cctrack](https://github.com/haoagent/cctrack) | 2 | dashboard | Real-time cost & activity dashboard for Claude Code. Track every dollar, every t |
 
+## The App
+
+Yes, there's a menu bar app. Because of course there is.
+
+**Download:** [ClaudeTrackerTracker.app](app/ClaudeTrackerTracker.app)
+
+1. Download the app folder
+2. Move `ClaudeTrackerTracker.app` to Applications
+3. Open it (you may need to right-click → Open the first time)
+4. See the tracker count in your menu bar
+
+The app fetches live data from this repo. When new trackers are added, your count updates automatically.
+
 ## Types
 
 - **macos-app** - Native macOS menu bar applications
