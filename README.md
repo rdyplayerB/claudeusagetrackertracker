@@ -1,8 +1,12 @@
 # Claude Usage Tracker Tracker
 
-![Everyone gets a Claude Usage Tracker](meme.jpg)
+<p align="center">
+  <img src="cutt-logo.png" alt="CUTT Logo" width="120">
+</p>
 
 Everyone's building Claude usage trackers. This repo tracks them.
+
+![Everyone gets a Claude Usage Tracker](meme.jpg)
 
 ![Trackers](https://img.shields.io/badge/trackers-24-orange)
 ![Stars](https://img.shields.io/badge/total_stars-2,776-yellow)
