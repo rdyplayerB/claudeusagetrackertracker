@@ -13,10 +13,6 @@
   <img src="cutt-ss.png" alt="CUTT App Screenshot" width="320">
 </p>
 
-## Why?
-
-Why not.
-
 ## Leaderboard
 
 | # | Name | Type | Stars | Description |
