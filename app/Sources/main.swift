@@ -262,7 +262,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
         if let button = statusItem.button {
-            button.title = "📊 ..."
+            // Load menu bar icon from Resources
+            if let iconPath = Bundle.main.path(forResource: "menubar-icon", ofType: "png"),
+               let icon = NSImage(contentsOfFile: iconPath) {
+                icon.size = NSSize(width: 18, height: 18)
+                icon.isTemplate = true  // Adapts to light/dark mode
+                button.image = icon
+                button.imagePosition = .imageLeft
+            }
+            button.title = " ..."
             button.action = #selector(togglePopover)
             button.target = self
         }
@@ -278,7 +286,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         state.$trackerCount.sink { [weak self] count in
             DispatchQueue.main.async {
                 if count > 0 {
-                    self?.statusItem.button?.title = "📊 \(count)"
+                    self?.statusItem.button?.title = " \(count)"
                 }
             }
         }.store(in: &cancellables)

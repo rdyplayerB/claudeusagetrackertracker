@@ -1,19 +1,21 @@
 # Claude Usage Tracker Tracker
 
 <p align="center">
-  <img src="cutt-logo.png" alt="CUTT Logo" width="120">
+  <img src="cutt-logo.png" alt="CUTT Logo" width="100">
+  <br><br>
+  <strong>Everyone's building Claude usage trackers. This repo tracks them.</strong>
+  <br><br>
+  <img src="https://img.shields.io/badge/trackers-24-orange" alt="Trackers">
+  <img src="https://img.shields.io/badge/total_stars-2,776-yellow" alt="Stars">
 </p>
 
-Everyone's building Claude usage trackers. This repo tracks them.
-
-![Everyone gets a Claude Usage Tracker](meme.jpg)
-
-![Trackers](https://img.shields.io/badge/trackers-24-orange)
-![Stars](https://img.shields.io/badge/total_stars-2,776-yellow)
+<p align="center">
+  <img src="cutt-ss.png" alt="CUTT App Screenshot" width="320">
+</p>
 
 ## The App
 
-A macOS menu bar app that shows the live count.
+A macOS menu bar app that shows the live tracker count, leaderboard, and weekly activity.
 
 ```bash
 cd app && swift build -c release
