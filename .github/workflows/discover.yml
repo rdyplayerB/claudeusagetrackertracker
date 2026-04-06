@@ -47,7 +47,22 @@ jobs:
           fi
         id: search
 
-      - name: Update trackers.json
+      - name: Update star counts for existing trackers
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Update star counts from search results
+          jq --slurpfile results /tmp/all_results.json '
+            .trackers |= map(
+              . as $t |
+              ($results[0][] | select(.url == $t.url) | .stargazersCount) as $newStars |
+              if $newStars then .stars = $newStars else . end
+            ) |
+            .trackers |= sort_by(-.stars)
+          ' trackers.json > /tmp/updated_stars.json
+          mv /tmp/updated_stars.json trackers.json
+
+      - name: Update trackers.json with new discoveries
         if: steps.search.outputs.new_count > 0
         run: |
           TODAY=$(date +%Y-%m-%d)
@@ -69,12 +84,67 @@ jobs:
           ' trackers.json > /tmp/updated.json
           mv /tmp/updated.json trackers.json
 
+      - name: Update history.json
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+
+          # Calculate totals
+          TOTAL_COUNT=$(jq '.trackers | length' trackers.json)
+          TOTAL_STARS=$(jq '[.trackers[].stars] | add' trackers.json)
+
+          # Get new trackers discovered today
+          NEW_TODAY=$(jq --arg today "$TODAY" '[.trackers[] | select(.discovered == $today)] | length' trackers.json)
+
+          # Initialize history.json if it doesn't exist
+          if [ ! -f history.json ]; then
+            echo '{"entries":[]}' > history.json
+          fi
+
+          # Add today's entry (or update if already exists)
+          jq --arg date "$TODAY" \
+             --argjson count "$TOTAL_COUNT" \
+             --argjson stars "$TOTAL_STARS" \
+             --argjson new "$NEW_TODAY" '
+            .entries |= (
+              map(select(.date != $date)) + [{
+                date: $date,
+                count: $count,
+                stars: $stars,
+                new: $new
+              }]
+            ) |
+            .entries |= sort_by(.date)
+          ' history.json > /tmp/history_updated.json
+          mv /tmp/history_updated.json history.json
+
+      - name: Update metadata
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          TOTAL_COUNT=$(jq '.trackers | length' trackers.json)
+          TOTAL_STARS=$(jq '[.trackers[].stars] | add' trackers.json)
+
+          jq --arg today "$TODAY" \
+             --argjson count "$TOTAL_COUNT" \
+             --argjson stars "$TOTAL_STARS" '
+            .meta.last_updated = $today |
+            .meta.total_count = $count |
+            .meta.total_stars = $stars
+          ' trackers.json > /tmp/meta_updated.json
+          mv /tmp/meta_updated.json trackers.json
+
       - name: Regenerate README
-        if: steps.search.outputs.new_count > 0
         run: |
           ./scripts/generate-readme.sh
 
-      - name: Create Pull Request
+      - name: Commit daily updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add trackers.json history.json README.md
+          git diff --staged --quiet || git commit -m "Daily stats update"
+          git push
+
+      - name: Create Pull Request for new discoveries
         if: steps.search.outputs.new_count > 0
         uses: peter-evans/create-pull-request@v6
         with:
