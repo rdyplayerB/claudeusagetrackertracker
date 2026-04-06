@@ -1,8 +1,8 @@
 {
   "meta": {
     "last_updated": "2026-04-06",
-    "total_count": 15,
-    "total_stars": 2876
+    "total_count": 32,
+    "total_stars": 2870
   },
   "trackers": [
     {
@@ -10,7 +10,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 1933,
+      "stars": 1934,
       "type": "macos-app",
       "discovered": "2026-04-06"
     },
@@ -96,6 +96,33 @@
       "discovered": "2026-04-06"
     },
     {
+      "name": "claude-code-tracker",
+      "repo": "55onurisik/claude-code-tracker",
+      "url": "https://github.com/55onurisik/claude-code-tracker",
+      "description": "",
+      "stars": 5,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "ClaudeUsageTracker",
+      "repo": "SergioBanuls/ClaudeUsageTracker",
+      "url": "https://github.com/SergioBanuls/ClaudeUsageTracker",
+      "description": "Track your Claude Code API usage from your macOS menu bar with accurate cost calculations",
+      "stars": 5,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "ClaudeUsageTracker",
+      "repo": "pratikbaid3/ClaudeUsageTracker",
+      "url": "https://github.com/pratikbaid3/ClaudeUsageTracker",
+      "description": "",
+      "stars": 5,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
       "name": "claude-token-tracker",
       "repo": "pepperonas/claude-token-tracker",
       "url": "https://github.com/pepperonas/claude-token-tracker",
@@ -114,12 +141,84 @@
       "discovered": "2026-04-06"
     },
     {
+      "name": "sygil",
+      "repo": "Mastersam07/sygil",
+      "url": "https://github.com/Mastersam07/sygil",
+      "description": "Your System has awakened. A real-time analytics dashboard for Claude Code — track tokens, costs, sessions, file changes, and more. Zero config, zero cloud.",
+      "stars": 4,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "fiale-claude-plugins",
+      "repo": "fiale-plus/fiale-claude-plugins",
+      "url": "https://github.com/fiale-plus/fiale-claude-plugins",
+      "description": "Real-time statusline plugin for Claude Code - track GitHub PRs, control music, get smart alerts",
+      "stars": 4,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "personal-health-template",
+      "repo": "mslavov/personal-health-template",
+      "url": "https://github.com/mslavov/personal-health-template",
+      "description": "Personal health knowledge base template for Claude Code - track biomarkers, Apple Health data, medical documents, and research",
+      "stars": 4,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
       "name": "ClaudeUsage",
       "repo": "LouisVanh/ClaudeUsage",
       "url": "https://github.com/LouisVanh/ClaudeUsage",
       "description": "Lightweight Claude Usage Tracker",
       "stars": 3,
       "type": "cli",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "cfranci/claude-usage-tracker",
+      "url": "https://github.com/cfranci/claude-usage-tracker",
+      "description": "macOS menu bar app showing Claude usage limits and reset times",
+      "stars": 3,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-rituals",
+      "repo": "erhankaya34/claude-rituals",
+      "url": "https://github.com/erhankaya34/claude-rituals",
+      "description": "Session management for Claude Code. Track parallel tabs, checkpoint work, and close sessions with structured commits.",
+      "stars": 3,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "haasonsaas/claude-usage-tracker",
+      "url": "https://github.com/haasonsaas/claude-usage-tracker",
+      "description": "🔍 Track and analyze Claude Code usage with rate limit awareness. Parse JSONL logs, calculate costs, and get warnings before hitting rate limits. CLI tool with daily/weekly breakdowns.",
+      "stars": 3,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-code-tracker",
+      "repo": "kelsi-andrewss/claude-code-tracker",
+      "url": "https://github.com/kelsi-andrewss/claude-code-tracker",
+      "description": "",
+      "stars": 3,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-code-usage-analytics",
+      "repo": "wangtae/claude-code-usage-analytics",
+      "url": "https://github.com/wangtae/claude-code-usage-analytics",
+      "description": "Multi-device usage monitoring and analytics dashboard for Claude Code - Track tokens, costs, and rate limits across all your machines with real-time insights",
+      "stars": 3,
+      "type": "unknown",
       "discovered": "2026-04-06"
     },
     {
@@ -138,6 +237,60 @@
       "description": "Real-time cost & activity dashboard for Claude Code. Track every dollar, every token, every tool call.",
       "stars": 2,
       "type": "dashboard",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "mcp-cost-tracker",
+      "repo": "IgniteStudiosLtd/mcp-cost-tracker",
+      "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
+      "description": "MCP Cost Tracker for Claude Code - Track session costs across all projects with CSV storage and interactive dashboard",
+      "stars": 2,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-code-telemetry-setup",
+      "repo": "OmriYaHoo/claude-code-telemetry-setup",
+      "url": "https://github.com/OmriYaHoo/claude-code-telemetry-setup",
+      "description": "One-command monitoring solution for Claude Code. Track AI-assisted development metrics with a pre-configured Grafana dashboard featuring 22 visualizations.",
+      "stars": 2,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "eli-manning/claude-usage-tracker",
+      "url": "https://github.com/eli-manning/claude-usage-tracker",
+      "description": "",
+      "stars": 2,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "worklog-for-claude",
+      "repo": "kangraemin/worklog-for-claude",
+      "url": "https://github.com/kangraemin/worklog-for-claude",
+      "description": "AI worklog for Claude Code — track your AI-assisted work sessions with Notion or local markdown",
+      "stars": 2,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "ralph-beads",
+      "repo": "saenidev/ralph-beads",
+      "url": "https://github.com/saenidev/ralph-beads",
+      "description": "Ralph Loop + Beads integration for Claude Code - tracks Ralph sessions as Beads epics",
+      "stars": 2,
+      "type": "unknown",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "self-analyst",
+      "repo": "vins-hub/self-analyst",
+      "url": "https://github.com/vins-hub/self-analyst",
+      "description": "Self-analysis agent for Claude Code — track your IQ/EQ/AI evolution across any role (trader, developer, PM, designer)",
+      "stars": 2,
+      "type": "unknown",
       "discovered": "2026-04-06"
     }
   ]
