@@ -1,0 +1,91 @@
+name: Discover New Trackers
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Daily at 9 AM UTC
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Search for new trackers
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Search GitHub for Claude usage trackers
+          gh search repos "claude usage tracker" --limit 50 --json name,url,description,stargazersCount > /tmp/search1.json
+          gh search repos "claude code tracker" --limit 50 --json name,url,description,stargazersCount > /tmp/search2.json
+          gh search repos "claude token tracker" --limit 30 --json name,url,description,stargazersCount > /tmp/search3.json
+
+          # Combine and dedupe
+          jq -s 'add | unique_by(.url)' /tmp/search1.json /tmp/search2.json /tmp/search3.json > /tmp/all_results.json
+
+          # Get existing repos
+          jq -r '.trackers[].url' trackers.json > /tmp/existing.txt
+
+          # Find new repos (minimum 2 stars to filter noise)
+          jq -r --slurpfile existing <(jq -R . /tmp/existing.txt | jq -s .) \
+            '[.[] | select(.stargazersCount >= 2) | select(.url as $u | $existing[0] | index($u) | not)]' \
+            /tmp/all_results.json > /tmp/new_trackers.json
+
+          # Check if we found anything new
+          NEW_COUNT=$(jq length /tmp/new_trackers.json)
+          echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
+
+          if [ "$NEW_COUNT" -gt 0 ]; then
+            echo "Found $NEW_COUNT new tracker(s)!"
+            cat /tmp/new_trackers.json
+          else
+            echo "No new trackers found."
+          fi
+        id: search
+
+      - name: Update trackers.json
+        if: steps.search.outputs.new_count > 0
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+
+          # Add new trackers to the JSON
+          jq --slurpfile new /tmp/new_trackers.json --arg today "$TODAY" '
+            .trackers += [$new[0][] | {
+              name: .name,
+              repo: (.url | sub("https://github.com/"; "")),
+              url: .url,
+              description: (.description // ""),
+              stars: .stargazersCount,
+              type: "unknown",
+              discovered: $today
+            }] |
+            .trackers |= sort_by(-.stars) |
+            .meta.last_updated = $today |
+            .meta.total_count = (.trackers | length)
+          ' trackers.json > /tmp/updated.json
+          mv /tmp/updated.json trackers.json
+
+      - name: Regenerate README
+        if: steps.search.outputs.new_count > 0
+        run: |
+          ./scripts/generate-readme.sh
+
+      - name: Create Pull Request
+        if: steps.search.outputs.new_count > 0
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Add newly discovered trackers"
+          title: "New tracker(s) discovered"
+          body: |
+            The daily scan found new Claude usage tracker(s).
+
+            Review and merge to track them.
+
+            ---
+            *Automated by Claude Tracker Tracker*
+          branch: auto-discover
+          delete-branch: true

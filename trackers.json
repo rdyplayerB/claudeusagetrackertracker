@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "last_updated": "2026-04-06",
+    "total_count": 15
+  },
+  "trackers": [
+    {
+      "name": "Claude-Usage-Tracker",
+      "repo": "hamed-elfayome/Claude-Usage-Tracker",
+      "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
+      "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
+      "stars": 1933,
+      "type": "macos-app",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "opensync",
+      "repo": "waynesutton/opensync",
+      "url": "https://github.com/waynesutton/opensync",
+      "description": "Cloud-synced dashboards for OpenCode and Claude Code. Track sessions, search with semantic lookup, export eval datasets.",
+      "stars": 349,
+      "type": "dashboard",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "Claude-Usage-Extension",
+      "repo": "lugia19/Claude-Usage-Extension",
+      "url": "https://github.com/lugia19/Claude-Usage-Extension",
+      "description": "Claude Usage Tracker browser extension",
+      "stars": 247,
+      "type": "extension",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "ClaudeUsageTracker",
+      "repo": "masorange/ClaudeUsageTracker",
+      "url": "https://github.com/masorange/ClaudeUsageTracker",
+      "description": "Track your Claude Code API usage from your macOS menu bar with accurate cost calculations",
+      "stars": 109,
+      "type": "macos-app",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-code-source-all-in-one",
+      "repo": "wuwangzhang1216/claude-code-source-all-in-one",
+      "url": "https://github.com/wuwangzhang1216/claude-code-source-all-in-one",
+      "description": "Always up-to-date open-source mirror of Claude Code, tracking the official release closely.",
+      "stars": 55,
+      "type": "mirror",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "658jjh/claude-usage-tracker",
+      "url": "https://github.com/658jjh/claude-usage-tracker",
+      "description": "Track and visualize Claude AI usage costs across all local tools — OpenClaw, Claude Code, Claude Desktop, Cursor, Windsurf, Cline, Roo Code, Aider, and Continue.dev",
+      "stars": 36,
+      "type": "dashboard",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-usage-tracker-for-mac",
+      "repo": "penicillin0/claude-usage-tracker-for-mac",
+      "url": "https://github.com/penicillin0/claude-usage-tracker-for-mac",
+      "description": "Happy Hacking With Claude!!!",
+      "stars": 24,
+      "type": "macos-app",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "master-plan",
+      "repo": "endlessblink/master-plan",
+      "url": "https://github.com/endlessblink/master-plan",
+      "description": "AI-native task management for Claude Code. Track tasks in MASTER_PLAN.md — pick, save, ship.",
+      "stars": 22,
+      "type": "task-tracker",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-code-tracker",
+      "repo": "m-shirt/claude-code-tracker",
+      "url": "https://github.com/m-shirt/claude-code-tracker",
+      "description": "Self-hosted multi-user analytics dashboard for Claude Code — track sessions, conversations, token usage, and activity across your team.",
+      "stars": 20,
+      "type": "dashboard",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "Oh-My-Claude",
+      "repo": "hey-pals/Oh-My-Claude",
+      "url": "https://github.com/hey-pals/Oh-My-Claude",
+      "description": "Real-time monitoring dashboard for Claude Code — track tokens, agents, teams, costs, and activity live.",
+      "stars": 5,
+      "type": "dashboard",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-token-tracker",
+      "repo": "pepperonas/claude-token-tracker",
+      "url": "https://github.com/pepperonas/claude-token-tracker",
+      "description": "Token usage dashboard for Claude Code — tracks costs, sessions, models, and tools with real-time updates",
+      "stars": 4,
+      "type": "dashboard",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-peek",
+      "repo": "teambrilliant/claude-peek",
+      "url": "https://github.com/teambrilliant/claude-peek",
+      "description": "macOS notch status surface for Claude Code — track sessions, approve permissions, read conversations, reply. Privacy-first, native Swift/SwiftUI.",
+      "stars": 4,
+      "type": "macos-app",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "ClaudeUsage",
+      "repo": "LouisVanh/ClaudeUsage",
+      "url": "https://github.com/LouisVanh/ClaudeUsage",
+      "description": "Lightweight Claude Usage Tracker",
+      "stars": 3,
+      "type": "cli",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "claude-tracker",
+      "repo": "DSado88/claude-tracker",
+      "url": "https://github.com/DSado88/claude-tracker",
+      "description": "Multi-account Claude usage tracker TUI (Rust/ratatui)",
+      "stars": 2,
+      "type": "tui",
+      "discovered": "2026-04-06"
+    },
+    {
+      "name": "cctrack",
+      "repo": "haoagent/cctrack",
+      "url": "https://github.com/haoagent/cctrack",
+      "description": "Real-time cost & activity dashboard for Claude Code. Track every dollar, every token, every tool call.",
+      "stars": 2,
+      "type": "dashboard",
+      "discovered": "2026-04-06"
+    }
+  ]
+}
