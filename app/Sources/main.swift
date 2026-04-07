@@ -20,6 +20,7 @@ class AppState: ObservableObject {
     @Published var totalStars: Int = 0
     @Published var trackers: [Tracker] = []
     @Published var history: [HistoryEntry] = []
+    @Published var lastUpdated: String = ""
     @Published var isLoading: Bool = true
 
     var weeklyNew: Int {
@@ -57,6 +58,7 @@ class AppState: ObservableObject {
             }
 
             let stars = meta["total_stars"] as? Int ?? 0
+            let updated = meta["last_updated"] as? String ?? ""
             let parsed = trackersArray.compactMap { tracker -> Tracker? in
                 guard let name = tracker["name"] as? String,
                       let url = tracker["url"] as? String,
@@ -67,6 +69,7 @@ class AppState: ObservableObject {
             DispatchQueue.main.async {
                 self.trackerCount = count
                 self.totalStars = stars
+                self.lastUpdated = updated
                 self.trackers = parsed
                 self.isLoading = false
             }
@@ -168,7 +171,7 @@ struct PopoverView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 12) {
             // Header
             HStack {
                 Text("Claude Usage Tracker Tracker")
@@ -188,12 +191,12 @@ struct PopoverView: View {
                     Text("\(state.trackerCount)")
                         .font(.system(size: 32, weight: .bold))
                         .foregroundColor(.orange)
-                    Text("Trackers")
+                    Text("and counting")
                         .font(.system(size: 12))
                         .foregroundColor(secondaryText)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(14)
+                .padding(12)
                 .background(cardBackground)
                 .cornerRadius(10)
 
@@ -207,7 +210,7 @@ struct PopoverView: View {
                         .foregroundColor(secondaryText)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(14)
+                .padding(12)
                 .background(cardBackground)
                 .cornerRadius(10)
             }
@@ -227,6 +230,22 @@ struct PopoverView: View {
                         hoverBackground: cardBackground
                     )
                 }
+
+                Button(action: {
+                    if let url = URL(string: "https://github.com/rdyplayerB/claudeusagetrackertracker") {
+                        NSWorkspace.shared.open(url)
+                    }
+                }) {
+                    HStack {
+                        Spacer()
+                        Text("View all \(state.trackerCount) on GitHub →")
+                            .font(.system(size: 11))
+                            .foregroundColor(.blue)
+                        Spacer()
+                    }
+                }
+                .buttonStyle(.plain)
+                .padding(.top, 4)
             }
 
             Divider()
@@ -247,7 +266,7 @@ struct PopoverView: View {
                     let data = state.weeklyData
                     let maxVal = max(data.max() ?? 1, 1)
                     ForEach(0..<7, id: \.self) { i in
-                        let height = CGFloat(data[i]) / CGFloat(maxVal) * 40
+                        let height = CGFloat(data[i]) / CGFloat(maxVal) * 32
                         let barHeight = max(height, data[i] > 0 ? 8 : 4)
                         let isToday = i == 6
                         RoundedRectangle(cornerRadius: 2)
@@ -255,25 +274,19 @@ struct PopoverView: View {
                             .frame(height: barHeight)
                     }
                 }
-                .frame(height: 40)
+                .frame(height: 32)
             }
 
             // Footer
-            Button(action: {
-                if let url = URL(string: "https://github.com/rdyplayerB/claudeusagetrackertracker") {
-                    NSWorkspace.shared.open(url)
-                }
-            }) {
+            if !state.lastUpdated.isEmpty {
                 HStack {
                     Spacer()
-                    Text("View all \(state.trackerCount) on GitHub →")
-                        .font(.system(size: 12))
-                        .foregroundColor(.blue)
+                    Text("Synced \(state.lastUpdated)")
+                        .font(.system(size: 10))
+                        .foregroundColor(secondaryText)
                     Spacer()
                 }
             }
-            .buttonStyle(.plain)
-            .padding(.top, 4)
         }
         .padding(16)
         .frame(width: 300)
