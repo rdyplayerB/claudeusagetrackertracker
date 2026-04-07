@@ -6,6 +6,7 @@ struct Tracker: Identifiable {
     let name: String
     let url: String
     let stars: Int
+    let discovered: String
 }
 
 struct HistoryEntry {
@@ -30,9 +31,32 @@ class AppState: ObservableObject {
     var weeklyData: [Int] {
         let last7 = Array(history.suffix(7))
         if last7.isEmpty { return Array(repeating: 0, count: 7) }
-        // Pad to 7 days if less
         let padded = Array(repeating: HistoryEntry(date: "", count: 0, stars: 0, new: 0), count: max(0, 7 - last7.count)) + last7
         return padded.map { $0.new }
+    }
+
+    var weeklyEntries: [HistoryEntry] {
+        let last7 = Array(history.suffix(7))
+        if last7.isEmpty { return Array(repeating: HistoryEntry(date: "", count: 0, stars: 0, new: 0), count: 7) }
+        let padded = Array(repeating: HistoryEntry(date: "", count: 0, stars: 0, new: 0), count: max(0, 7 - last7.count)) + last7
+        return padded
+    }
+
+    func trackersDiscovered(on date: String) -> [String] {
+        return trackers.filter { $0.discovered == date }.map { $0.name }
+    }
+
+    var weeklyDayLabels: [String] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dayFormatter = DateFormatter()
+        dayFormatter.dateFormat = "E"
+        return weeklyEntries.map { entry -> String in
+            guard !entry.date.isEmpty,
+                  let date = dateFormatter.date(from: entry.date) else { return "?" }
+            let full = dayFormatter.string(from: date)
+            return String(full.prefix(1))
+        }
     }
 
     func fetchData() {
@@ -63,7 +87,8 @@ class AppState: ObservableObject {
                 guard let name = tracker["name"] as? String,
                       let url = tracker["url"] as? String,
                       let stars = tracker["stars"] as? Int else { return nil }
-                return Tracker(name: name, url: url, stars: stars)
+                let discovered = tracker["discovered"] as? String ?? ""
+                return Tracker(name: name, url: url, stars: stars, discovered: discovered)
             }
 
             DispatchQueue.main.async {
@@ -158,6 +183,128 @@ struct TrackerRow: View {
     }
 }
 
+struct ChartBar: View {
+    let value: Int
+    let maxValue: Int
+    let day: String
+    let fullDate: String
+    let trackerNames: [String]
+    let isToday: Bool
+    let barColor: Color
+    let labelColor: Color
+    @Binding var hoveredBar: Int?
+    let barIndex: Int
+
+    var isHovered: Bool {
+        hoveredBar == barIndex
+    }
+
+    var body: some View {
+        VStack(spacing: 2) {
+            ZStack {
+                let height = CGFloat(value) / CGFloat(maxValue) * 28
+                let barHeight = max(height, value > 0 ? 6 : 3)
+
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(isToday && value > 0 ? Color.green : (isHovered ? Color.blue.opacity(0.6) : barColor))
+                    .frame(height: barHeight)
+
+                if isHovered && value > 0 {
+                    Text("\(value)")
+                        .font(.system(size: 8, weight: .bold))
+                        .foregroundColor(.white)
+                }
+            }
+            .frame(height: 28, alignment: .bottom)
+
+            Text(day)
+                .font(.system(size: 8))
+                .foregroundColor(isToday ? .green : labelColor)
+        }
+        .frame(maxWidth: .infinity)
+        .onHover { hovering in
+            hoveredBar = hovering ? barIndex : nil
+        }
+    }
+}
+
+struct ChartSection: View {
+    @ObservedObject var state: AppState
+    let secondaryText: Color
+    let barColor: Color
+
+    @State private var hoveredBar: Int? = nil
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text("This Week")
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundColor(secondaryText)
+                Spacer()
+                Text("+\(state.weeklyNew) new")
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundColor(.green)
+            }
+
+            let entries = state.weeklyEntries
+            let data = entries.map { $0.new }
+            let maxVal = max(data.max() ?? 1, 1)
+            let days = state.weeklyDayLabels
+
+            HStack(alignment: .bottom, spacing: 4) {
+                ForEach(0..<7, id: \.self) { i in
+                    let entry = entries[i]
+                    ChartBar(
+                        value: data[i],
+                        maxValue: maxVal,
+                        day: days[i],
+                        fullDate: entry.date,
+                        trackerNames: state.trackersDiscovered(on: entry.date),
+                        isToday: i == 6,
+                        barColor: barColor,
+                        labelColor: secondaryText,
+                        hoveredBar: $hoveredBar,
+                        barIndex: i
+                    )
+                }
+            }
+
+            // Tooltip area - fixed height to prevent layout shifts
+            VStack(spacing: 2) {
+                if let idx = hoveredBar {
+                    let entry = entries[idx]
+                    let names = state.trackersDiscovered(on: entry.date)
+
+                    Text(entry.date.isEmpty ? "—" : entry.date)
+                        .font(.system(size: 10, weight: .medium))
+
+                    if names.isEmpty {
+                        Text(entry.new == 0 ? "No new trackers" : "\(entry.new) new")
+                            .font(.system(size: 9))
+                            .foregroundColor(secondaryText)
+                    } else {
+                        VStack(spacing: 1) {
+                            ForEach(names, id: \.self) { name in
+                                Text(name)
+                                    .font(.system(size: 9))
+                                    .foregroundColor(secondaryText)
+                            }
+                        }
+                    }
+                } else {
+                    Text(" ")
+                        .font(.system(size: 10))
+                    Text(" ")
+                        .font(.system(size: 9))
+                }
+            }
+            .frame(minHeight: 30)
+            .padding(.top, 4)
+        }
+    }
+}
+
 struct PopoverView: View {
     @ObservedObject var state: AppState
     @Environment(\.colorScheme) var colorScheme
@@ -171,7 +318,7 @@ struct PopoverView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 10) {
             // Header
             HStack {
                 Text("Claude Usage Tracker Tracker")
@@ -189,7 +336,7 @@ struct PopoverView: View {
                 // Trackers Card
                 VStack(spacing: 4) {
                     Text("\(state.trackerCount)")
-                        .font(.system(size: 32, weight: .bold))
+                        .font(.system(size: 28, weight: .bold))
                         .foregroundColor(.orange)
                     Text("and counting")
                         .font(.system(size: 12))
@@ -203,7 +350,7 @@ struct PopoverView: View {
                 // Stars Card
                 VStack(spacing: 4) {
                     Text(state.formatNumber(state.totalStars))
-                        .font(.system(size: 32, weight: .bold))
+                        .font(.system(size: 28, weight: .bold))
                         .foregroundColor(.green)
                     Text("Stars")
                         .font(.system(size: 12))
@@ -251,31 +398,7 @@ struct PopoverView: View {
             Divider()
 
             // This Week Chart
-            VStack(alignment: .leading, spacing: 8) {
-                HStack {
-                    Text("This Week")
-                        .font(.system(size: 10, weight: .semibold))
-                        .foregroundColor(secondaryText)
-                    Spacer()
-                    Text("+\(state.weeklyNew) new")
-                        .font(.system(size: 10, weight: .semibold))
-                        .foregroundColor(.green)
-                }
-
-                HStack(alignment: .bottom, spacing: 4) {
-                    let data = state.weeklyData
-                    let maxVal = max(data.max() ?? 1, 1)
-                    ForEach(0..<7, id: \.self) { i in
-                        let height = CGFloat(data[i]) / CGFloat(maxVal) * 32
-                        let barHeight = max(height, data[i] > 0 ? 8 : 4)
-                        let isToday = i == 6
-                        RoundedRectangle(cornerRadius: 2)
-                            .fill(isToday && data[i] > 0 ? Color.green : (colorScheme == .dark ? Color(white: 0.23) : Color(white: 0.8)))
-                            .frame(height: barHeight)
-                    }
-                }
-                .frame(height: 32)
-            }
+            ChartSection(state: state, secondaryText: secondaryText, barColor: colorScheme == .dark ? Color(white: 0.23) : Color(white: 0.8))
 
             // Footer
             if !state.lastUpdated.isEmpty {
