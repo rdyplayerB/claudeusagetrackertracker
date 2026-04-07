@@ -20,14 +20,14 @@
 | 🥇 | **[Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker)** | macOS | **1,934** | Native menu bar app for tracking Claude AI usage limits in real-time |
 | 🥈 | **[opensync](https://github.com/waynesutton/opensync)** | Web | **349** | Cloud-synced dashboards for OpenCode and Claude Code |
 | 🥉 | **[Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension)** | Extension | **247** | Claude Usage Tracker browser extension |
+| 4️⃣ | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | macOS | 109 | Track Claude Code API usage from your menu bar |
+| 5️⃣ | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | Web | 36 | Track usage costs across Claude Code, Cursor, Windsurf, Cline, and more |
 
 <details>
 <summary><strong>View all 24 trackers</strong></summary>
 
 | # | Name | Type | Stars | Description |
 |---|------|------|-------|-------------|
-| 4 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | macOS | 109 | Track Claude Code API usage from your menu bar |
-| 5 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | Web | 36 | Track usage costs across Claude Code, Cursor, Windsurf, Cline, and more |
 | 6 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | macOS | 24 | Happy Hacking With Claude! |
 | 7 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | Web | 20 | Self-hosted multi-user analytics dashboard for Claude Code |
 | 8 | [Oh-My-Claude](https://github.com/hey-pals/Oh-My-Claude) | Web | 5 | Real-time monitoring dashboard for Claude Code |
