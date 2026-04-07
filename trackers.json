@@ -1,9 +1,9 @@
 {
   "meta": {
     "last_updated": "2026-04-06",
-    "total_count": 24,
-    "total_stars": 2776,
-    "total_forks": 166
+    "total_count": 23,
+    "total_stars": 2429,
+    "total_forks": 129
   },
   "trackers": [
     {
@@ -14,16 +14,6 @@
       "stars": 1935,
       "forks": 95,
       "type": "macos-app",
-      "discovered": "2026-03-15"
-    },
-    {
-      "name": "opensync",
-      "repo": "waynesutton/opensync",
-      "url": "https://github.com/waynesutton/opensync",
-      "description": "Cloud-synced dashboards for OpenCode and Claude Code. Track sessions, search with semantic lookup, export eval datasets.",
-      "stars": 349,
-      "forks": 37,
-      "type": "dashboard",
       "discovered": "2026-03-15"
     },
     {
