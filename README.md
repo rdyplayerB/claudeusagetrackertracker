@@ -53,6 +53,11 @@
 
 A macOS menu bar app that shows the live tracker count, leaderboard, and weekly activity.
 
+**[Download v1.0.0](https://github.com/rdyplayerB/claudeusagetrackertracker/releases/latest)**
+
+> First launch: Right-click → Open → Open (unsigned app)
+
+Or build from source:
 ```bash
 cd app && swift build -c release
 open ClaudeTrackerTracker.app
