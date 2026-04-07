@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="cutt-screenshot.png" alt="CUTT App Screenshot" width="320">
+  <img src="cutt-screenshot.png?v=3" alt="CUTT App Screenshot" width="320">
 </p>
 
 ## Leaderboard
