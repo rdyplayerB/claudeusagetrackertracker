@@ -6,6 +6,7 @@ struct Tracker: Identifiable {
     let name: String
     let url: String
     let stars: Int
+    let forks: Int
     let discovered: String
 }
 
@@ -19,6 +20,7 @@ struct HistoryEntry {
 class AppState: ObservableObject {
     @Published var trackerCount: Int = 0
     @Published var totalStars: Int = 0
+    @Published var totalForks: Int = 0
     @Published var trackers: [Tracker] = []
     @Published var history: [HistoryEntry] = []
     @Published var lastUpdated: String = ""
@@ -42,8 +44,8 @@ class AppState: ObservableObject {
         return padded
     }
 
-    func trackersDiscovered(on date: String) -> [String] {
-        return trackers.filter { $0.discovered == date }.map { $0.name }
+    func trackersDiscovered(on date: String) -> [Tracker] {
+        return trackers.filter { $0.discovered == date }
     }
 
     var weeklyDayLabels: [String] {
@@ -82,18 +84,21 @@ class AppState: ObservableObject {
             }
 
             let stars = meta["total_stars"] as? Int ?? 0
+            let forks = meta["total_forks"] as? Int ?? 0
             let updated = meta["last_updated"] as? String ?? ""
             let parsed = trackersArray.compactMap { tracker -> Tracker? in
                 guard let name = tracker["name"] as? String,
                       let url = tracker["url"] as? String,
                       let stars = tracker["stars"] as? Int else { return nil }
+                let forks = tracker["forks"] as? Int ?? 0
                 let discovered = tracker["discovered"] as? String ?? ""
-                return Tracker(name: name, url: url, stars: stars, discovered: discovered)
+                return Tracker(name: name, url: url, stars: stars, forks: forks, discovered: discovered)
             }
 
             DispatchQueue.main.async {
                 self.trackerCount = count
                 self.totalStars = stars
+                self.totalForks = forks
                 self.lastUpdated = updated
                 self.trackers = parsed
                 self.isLoading = false
@@ -142,6 +147,15 @@ struct TrackerRow: View {
 
     @State private var isHovered = false
 
+    var medalEmoji: String? {
+        switch index {
+        case 0: return "🥇"
+        case 1: return "🥈"
+        case 2: return "🥉"
+        default: return nil
+        }
+    }
+
     var body: some View {
         Button(action: {
             if let url = URL(string: tracker.url) {
@@ -150,8 +164,8 @@ struct TrackerRow: View {
         }) {
             HStack {
                 HStack(spacing: 4) {
-                    if index == 0 {
-                        Text("🏆")
+                    if let medal = medalEmoji {
+                        Text(medal)
                             .font(.system(size: 12))
                     }
                     Text(tracker.name)
@@ -164,10 +178,6 @@ struct TrackerRow: View {
                     Text(formatNumber(tracker.stars))
                         .font(.system(size: 12))
                         .foregroundColor(index == 0 ? .orange : secondaryText)
-                    if index == 0 {
-                        Text("⭐")
-                            .font(.system(size: 10))
-                    }
                 }
             }
             .padding(.horizontal, 8)
@@ -188,7 +198,6 @@ struct ChartBar: View {
     let maxValue: Int
     let day: String
     let fullDate: String
-    let trackerNames: [String]
     let isToday: Bool
     let barColor: Color
     let labelColor: Color
@@ -223,7 +232,9 @@ struct ChartBar: View {
         }
         .frame(maxWidth: .infinity)
         .onHover { hovering in
-            hoveredBar = hovering ? barIndex : nil
+            if hovering {
+                hoveredBar = barIndex
+            }
         }
     }
 }
@@ -260,7 +271,6 @@ struct ChartSection: View {
                         maxValue: maxVal,
                         day: days[i],
                         fullDate: entry.date,
-                        trackerNames: state.trackersDiscovered(on: entry.date),
                         isToday: i == 6,
                         barColor: barColor,
                         labelColor: secondaryText,
@@ -270,36 +280,47 @@ struct ChartSection: View {
                 }
             }
 
-            // Tooltip area - fixed height to prevent layout shifts
-            VStack(spacing: 2) {
+            // Tooltip area - persistent, left-aligned, clickable links
+            VStack(alignment: .leading, spacing: 4) {
                 if let idx = hoveredBar {
                     let entry = entries[idx]
-                    let names = state.trackersDiscovered(on: entry.date)
+                    let trackers = state.trackersDiscovered(on: entry.date)
 
                     Text(entry.date.isEmpty ? "—" : entry.date)
                         .font(.system(size: 10, weight: .medium))
 
-                    if names.isEmpty {
+                    if trackers.isEmpty {
                         Text(entry.new == 0 ? "No new trackers" : "\(entry.new) new")
                             .font(.system(size: 9))
                             .foregroundColor(secondaryText)
                     } else {
-                        VStack(spacing: 1) {
-                            ForEach(names, id: \.self) { name in
-                                Text(name)
+                        ForEach(Array(trackers.prefix(3)), id: \.id) { tracker in
+                            Button(action: {
+                                if let url = URL(string: tracker.url) {
+                                    NSWorkspace.shared.open(url)
+                                }
+                            }) {
+                                Text(tracker.name)
                                     .font(.system(size: 9))
-                                    .foregroundColor(secondaryText)
+                                    .foregroundColor(.blue)
+                                    .underline()
                             }
+                            .buttonStyle(.plain)
+                        }
+                        if trackers.count > 3 {
+                            Text("+\(trackers.count - 3) more")
+                                .font(.system(size: 9))
+                                .foregroundColor(secondaryText)
                         }
                     }
                 } else {
-                    Text(" ")
-                        .font(.system(size: 10))
-                    Text(" ")
+                    Text("Hover a bar to see details")
                         .font(.system(size: 9))
+                        .foregroundColor(secondaryText)
                 }
             }
-            .frame(minHeight: 30)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(minHeight: 50)
             .padding(.top, 4)
         }
     }
@@ -332,34 +353,48 @@ struct PopoverView: View {
             }
 
             // Stats Cards
-            HStack(spacing: 12) {
+            HStack(spacing: 8) {
                 // Trackers Card
-                VStack(spacing: 4) {
+                VStack(spacing: 2) {
                     Text("\(state.trackerCount)")
-                        .font(.system(size: 28, weight: .bold))
+                        .font(.system(size: 22, weight: .bold))
                         .foregroundColor(.orange)
-                    Text("and counting")
-                        .font(.system(size: 12))
+                    Text("Trackers")
+                        .font(.system(size: 9))
                         .foregroundColor(secondaryText)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(12)
+                .padding(8)
                 .background(cardBackground)
-                .cornerRadius(10)
+                .cornerRadius(8)
 
                 // Stars Card
-                VStack(spacing: 4) {
+                VStack(spacing: 2) {
                     Text(state.formatNumber(state.totalStars))
-                        .font(.system(size: 28, weight: .bold))
-                        .foregroundColor(.green)
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundColor(.yellow)
                     Text("Stars")
-                        .font(.system(size: 12))
+                        .font(.system(size: 9))
                         .foregroundColor(secondaryText)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(12)
+                .padding(8)
                 .background(cardBackground)
-                .cornerRadius(10)
+                .cornerRadius(8)
+
+                // Forks Card
+                VStack(spacing: 2) {
+                    Text(state.formatNumber(state.totalForks))
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundColor(.green)
+                    Text("Forks")
+                        .font(.system(size: 9))
+                        .foregroundColor(secondaryText)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(8)
+                .background(cardBackground)
+                .cornerRadius(8)
             }
 
             // Top Trackers

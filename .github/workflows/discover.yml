@@ -51,34 +51,58 @@ jobs:
           fi
         id: search
 
-      - name: Update star counts for existing trackers
+      - name: Update stars and forks for existing trackers
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Update star counts from search results
-          jq --slurpfile results /tmp/all_results.json '
+          # Fetch current stars and forks for each tracker via API
+          echo '[]' > /tmp/repo_stats.json
+          for repo in $(jq -r '.trackers[].repo' trackers.json); do
+            stats=$(gh api "repos/$repo" --jq '{repo: .full_name, stars: .stargazers_count, forks: .forks_count}' 2>/dev/null || echo "{\"repo\":\"$repo\",\"stars\":0,\"forks\":0}")
+            jq --argjson stat "$stats" '. += [$stat]' /tmp/repo_stats.json > /tmp/repo_stats_new.json
+            mv /tmp/repo_stats_new.json /tmp/repo_stats.json
+          done
+
+          # Update trackers with fresh stars and forks
+          jq --slurpfile stats /tmp/repo_stats.json '
             .trackers |= map(
               . as $t |
-              ($results[0][] | select(.url == $t.url) | .stargazersCount) as $newStars |
-              if $newStars then .stars = $newStars else . end
+              ($stats[0][] | select(.repo == $t.repo)) as $s |
+              if $s then .stars = $s.stars | .forks = $s.forks else . end
             ) |
             .trackers |= sort_by(-.stars)
-          ' trackers.json > /tmp/updated_stars.json
-          mv /tmp/updated_stars.json trackers.json
+          ' trackers.json > /tmp/updated_stats.json
+          mv /tmp/updated_stats.json trackers.json
 
       - name: Update trackers.json with new discoveries
         if: steps.search.outputs.new_count > 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TODAY=$(date +%Y-%m-%d)
 
-          # Add new trackers to the JSON
-          jq --slurpfile new /tmp/new_trackers.json --arg today "$TODAY" '
-            .trackers += [$new[0][] | {
+          # Fetch forks for new trackers
+          echo '[]' > /tmp/new_with_forks.json
+          for url in $(jq -r '.[].url' /tmp/new_trackers.json); do
+            repo=$(echo "$url" | sed 's|https://github.com/||')
+            forks=$(gh api "repos/$repo" --jq '.forks_count' 2>/dev/null || echo "0")
+            jq --arg url "$url" --argjson forks "$forks" \
+              '. += [{"url": $url, "forks": $forks}]' /tmp/new_with_forks.json > /tmp/new_with_forks_tmp.json
+            mv /tmp/new_with_forks_tmp.json /tmp/new_with_forks.json
+          done
+
+          # Add new trackers to the JSON with forks
+          jq --slurpfile new /tmp/new_trackers.json \
+             --slurpfile forks /tmp/new_with_forks.json \
+             --arg today "$TODAY" '
+            .trackers += [$new[0][] | . as $t |
+              ($forks[0][] | select(.url == $t.url) | .forks) as $f | {
               name: .name,
               repo: (.url | sub("https://github.com/"; "")),
               url: .url,
               description: (.description // ""),
               stars: .stargazersCount,
+              forks: ($f // 0),
               type: "unknown",
               discovered: $today
             }] |
@@ -126,13 +150,16 @@ jobs:
           TODAY=$(date +%Y-%m-%d)
           TOTAL_COUNT=$(jq '.trackers | length' trackers.json)
           TOTAL_STARS=$(jq '[.trackers[].stars] | add' trackers.json)
+          TOTAL_FORKS=$(jq '[.trackers[].forks // 0] | add' trackers.json)
 
           jq --arg today "$TODAY" \
              --argjson count "$TOTAL_COUNT" \
-             --argjson stars "$TOTAL_STARS" '
+             --argjson stars "$TOTAL_STARS" \
+             --argjson forks "$TOTAL_FORKS" '
             .meta.last_updated = $today |
             .meta.total_count = $count |
-            .meta.total_stars = $stars
+            .meta.total_stars = $stars |
+            .meta.total_forks = $forks
           ' trackers.json > /tmp/meta_updated.json
           mv /tmp/meta_updated.json trackers.json
 
