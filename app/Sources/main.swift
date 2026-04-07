@@ -24,6 +24,7 @@ class AppState: ObservableObject {
     @Published var trackers: [Tracker] = []
     @Published var history: [HistoryEntry] = []
     @Published var lastUpdated: String = ""
+    @Published var lastRefreshed: Date? = nil
     @Published var isLoading: Bool = true
 
     var weeklyNew: Int {
@@ -68,7 +69,9 @@ class AppState: ObservableObject {
     }
 
     func fetchTrackers() {
-        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/trackers.json"
+        // Add cache-busting parameter to bypass CDN cache
+        let timestamp = Int(Date().timeIntervalSince1970)
+        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/trackers.json?t=\(timestamp)"
         guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -101,13 +104,15 @@ class AppState: ObservableObject {
                 self.totalForks = forks
                 self.lastUpdated = updated
                 self.trackers = parsed
+                self.lastRefreshed = Date()
                 self.isLoading = false
             }
         }.resume()
     }
 
     func fetchHistory() {
-        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/history.json"
+        let timestamp = Int(Date().timeIntervalSince1970)
+        let urlString = "https://raw.githubusercontent.com/rdyplayerB/claudeusagetrackertracker/master/history.json?t=\(timestamp)"
         guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -135,6 +140,17 @@ class AppState: ObservableObject {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         return formatter.string(from: NSNumber(value: n)) ?? "\(n)"
+    }
+
+    var refreshedAgo: String {
+        guard let date = lastRefreshed else { return "" }
+        let seconds = Int(-date.timeIntervalSinceNow)
+        if seconds < 5 { return "just now" }
+        if seconds < 60 { return "\(seconds)s ago" }
+        let minutes = seconds / 60
+        if minutes < 60 { return "\(minutes)m ago" }
+        let hours = minutes / 60
+        return "\(hours)h ago"
     }
 }
 
@@ -280,47 +296,52 @@ struct ChartSection: View {
                 }
             }
 
-            // Tooltip area - persistent, left-aligned, clickable links
+            // Tooltip area - fixed layout, date on top, scrollable list below
             VStack(alignment: .leading, spacing: 4) {
-                if let idx = hoveredBar {
-                    let entry = entries[idx]
-                    let trackers = state.trackersDiscovered(on: entry.date)
+                // Fixed date row
+                Text(hoveredBar != nil ? (entries[hoveredBar!].date.isEmpty ? "—" : entries[hoveredBar!].date) : "Hover a bar")
+                    .font(.system(size: 10, weight: .medium))
+                    .frame(height: 14)
 
-                    Text(entry.date.isEmpty ? "—" : entry.date)
-                        .font(.system(size: 10, weight: .medium))
+                // Fixed-height tracker list area
+                VStack(alignment: .leading, spacing: 2) {
+                    if let idx = hoveredBar {
+                        let entry = entries[idx]
+                        let trackers = state.trackersDiscovered(on: entry.date)
 
-                    if trackers.isEmpty {
-                        Text(entry.new == 0 ? "No new trackers" : "\(entry.new) new")
-                            .font(.system(size: 9))
-                            .foregroundColor(secondaryText)
-                    } else {
-                        ForEach(Array(trackers.prefix(3)), id: \.id) { tracker in
-                            Button(action: {
-                                if let url = URL(string: tracker.url) {
-                                    NSWorkspace.shared.open(url)
-                                }
-                            }) {
-                                Text(tracker.name)
-                                    .font(.system(size: 9))
-                                    .foregroundColor(.blue)
-                                    .underline()
-                            }
-                            .buttonStyle(.plain)
-                        }
-                        if trackers.count > 3 {
-                            Text("+\(trackers.count - 3) more")
+                        if trackers.isEmpty {
+                            Text(entry.new == 0 ? "No new trackers" : "\(entry.new) new")
                                 .font(.system(size: 9))
                                 .foregroundColor(secondaryText)
+                        } else {
+                            ForEach(Array(trackers.prefix(3)), id: \.id) { tracker in
+                                Button(action: {
+                                    if let url = URL(string: tracker.url) {
+                                        NSWorkspace.shared.open(url)
+                                    }
+                                }) {
+                                    Text(tracker.name)
+                                        .font(.system(size: 9))
+                                        .foregroundColor(.blue)
+                                        .underline()
+                                }
+                                .buttonStyle(.plain)
+                            }
+                            if trackers.count > 3 {
+                                Text("+\(trackers.count - 3) more")
+                                    .font(.system(size: 9))
+                                    .foregroundColor(secondaryText)
+                            }
                         }
+                    } else {
+                        Text("to see details")
+                            .font(.system(size: 9))
+                            .foregroundColor(secondaryText)
                     }
-                } else {
-                    Text("Hover a bar to see details")
-                        .font(.system(size: 9))
-                        .foregroundColor(secondaryText)
                 }
+                .frame(height: 48, alignment: .top)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .frame(minHeight: 50)
             .padding(.top, 4)
         }
     }
@@ -348,8 +369,11 @@ struct PopoverView: View {
                 Button(action: { state.fetchData() }) {
                     Image(systemName: "arrow.clockwise")
                         .foregroundColor(secondaryText)
+                        .rotationEffect(.degrees(state.isLoading ? 360 : 0))
+                        .animation(state.isLoading ? .linear(duration: 1).repeatForever(autoreverses: false) : .default, value: state.isLoading)
                 }
                 .buttonStyle(.plain)
+                .disabled(state.isLoading)
             }
 
             // Stats Cards
@@ -436,18 +460,22 @@ struct PopoverView: View {
             ChartSection(state: state, secondaryText: secondaryText, barColor: colorScheme == .dark ? Color(white: 0.23) : Color(white: 0.8))
 
             // Footer
-            if !state.lastUpdated.isEmpty {
-                HStack {
-                    Spacer()
-                    Text("Synced \(state.lastUpdated)")
+            HStack {
+                Spacer()
+                if state.lastRefreshed != nil {
+                    Text("Refreshed \(state.refreshedAgo)")
                         .font(.system(size: 10))
                         .foregroundColor(secondaryText)
-                    Spacer()
+                } else if !state.lastUpdated.isEmpty {
+                    Text("Data from \(state.lastUpdated)")
+                        .font(.system(size: 10))
+                        .foregroundColor(secondaryText)
                 }
+                Spacer()
             }
         }
         .padding(16)
-        .frame(width: 300)
+        .frame(width: 300, height: 500)
     }
 }
 
@@ -475,7 +503,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         popover = NSPopover()
-        popover.contentSize = NSSize(width: 300, height: 400)
+        popover.contentSize = NSSize(width: 300, height: 500)
         popover.behavior = .transient
         popover.contentViewController = NSHostingController(rootView: PopoverView(state: state))
 
