@@ -13,6 +13,12 @@
   <img src="cutt-screenshot.png?v=4" alt="CUTT App Screenshot" width="320">
 </p>
 
+## Why
+
+I kept seeing Claude usage trackers pop up everywhere. Menu bar apps, browser extensions, dashboards, CLIs. Every few days, another one.
+
+Did anyone ask how many existed in total? No. Could I have counted them manually? Yes. Did I build an entire app to do it automatically instead? Obviously.
+
 ## Leaderboard
 
 | | Name | Type | Stars | Description |
