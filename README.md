@@ -17,8 +17,8 @@
 
 | | Name | Type | Stars | Description |
 |:---:|------|------|-------|-------------|
-| 🥇 | **[Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker)** | macOS | **1,935** | Native menu bar app for tracking Claude AI usage limits in real-time |
-| 🥈 | **[Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension)** | Extension | **247** | Claude Usage Tracker browser extension |
+| 🥇 | [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | macOS | 1,935 | Native menu bar app for tracking Claude AI usage limits in real-time |
+| 🥈 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | Extension | 247 | Claude Usage Tracker browser extension |
 | 🥉 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | macOS | 109 | Track Claude Code API usage from your menu bar |
 | 4 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | Web | 36 | Track usage costs across Claude Code, Cursor, Windsurf, Cline, and more |
 | 5 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | macOS | 24 | Happy Hacking With Claude! |
