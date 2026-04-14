@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-13",
-    "total_count": 24,
-    "total_stars": 2537,
-    "total_forks": 141
+    "last_updated": "2026-04-14",
+    "total_count": 25,
+    "total_stars": 2565,
+    "total_forks": 143
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2025,
-      "forks": 102,
+      "stars": 2039,
+      "forks": 103,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 252,
+      "stars": 253,
       "forks": 18,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -31,7 +31,7 @@
       "repo": "masorange/ClaudeUsageTracker",
       "url": "https://github.com/masorange/ClaudeUsageTracker",
       "description": "Track your Claude Code API usage from your macOS menu bar with accurate cost calculations",
-      "stars": 109,
+      "stars": 110,
       "forks": 6,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -47,6 +47,16 @@
       "discovered": "2026-03-15"
     },
     {
+      "name": "claude-code-tracker",
+      "repo": "m-shirt/claude-code-tracker",
+      "url": "https://github.com/m-shirt/claude-code-tracker",
+      "description": "Self-hosted multi-user analytics dashboard for Claude Code",
+      "stars": 25,
+      "forks": 3,
+      "type": "dashboard",
+      "discovered": "2026-03-15"
+    },
+    {
       "name": "claude-usage-tracker-for-mac",
       "repo": "penicillin0/claude-usage-tracker-for-mac",
       "url": "https://github.com/penicillin0/claude-usage-tracker-for-mac",
@@ -57,21 +67,21 @@
       "discovered": "2026-03-15"
     },
     {
-      "name": "claude-code-tracker",
-      "repo": "m-shirt/claude-code-tracker",
-      "url": "https://github.com/m-shirt/claude-code-tracker",
-      "description": "Self-hosted multi-user analytics dashboard for Claude Code",
-      "stars": 24,
-      "forks": 3,
-      "type": "dashboard",
-      "discovered": "2026-03-15"
+      "name": "ndoli",
+      "repo": "SteveHedden/ndoli",
+      "url": "https://github.com/SteveHedden/ndoli",
+      "description": "A personal knowledge graph (second brain) for Claude Code — tracks your professional network, projects, and opportunities using semantic web standards (RDF/OWL/SHACL).",
+      "stars": 9,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-04-14"
     },
     {
       "name": "daily-watchlist",
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 6,
+      "stars": 8,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-11"
