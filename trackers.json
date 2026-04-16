@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-15",
+    "last_updated": "2026-04-16",
     "total_count": 25,
-    "total_stars": 2589,
-    "total_forks": 145
+    "total_stars": 2621,
+    "total_forks": 147
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2059,
-      "forks": 105,
+      "stars": 2086,
+      "forks": 106,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 255,
-      "forks": 18,
+      "stars": 257,
+      "forks": 19,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -41,7 +41,7 @@
       "repo": "658jjh/claude-usage-tracker",
       "url": "https://github.com/658jjh/claude-usage-tracker",
       "description": "Track and visualize Claude AI usage costs across all local tools",
-      "stars": 39,
+      "stars": 40,
       "forks": 1,
       "type": "dashboard",
       "discovered": "2026-03-15"
@@ -71,7 +71,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 10,
+      "stars": 11,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -85,6 +85,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-14"
+    },
+    {
+      "name": "claude-token-tracker",
+      "repo": "pepperonas/claude-token-tracker",
+      "url": "https://github.com/pepperonas/claude-token-tracker",
+      "description": "Token usage dashboard for Claude Code",
+      "stars": 6,
+      "forks": 0,
+      "type": "dashboard",
+      "discovered": "2026-03-15"
     },
     {
       "name": "Oh-My-Claude",
@@ -124,16 +134,6 @@
       "stars": 5,
       "forks": 0,
       "type": "unknown",
-      "discovered": "2026-03-15"
-    },
-    {
-      "name": "claude-token-tracker",
-      "repo": "pepperonas/claude-token-tracker",
-      "url": "https://github.com/pepperonas/claude-token-tracker",
-      "description": "Token usage dashboard for Claude Code",
-      "stars": 5,
-      "forks": 0,
-      "type": "dashboard",
       "discovered": "2026-03-15"
     },
     {
