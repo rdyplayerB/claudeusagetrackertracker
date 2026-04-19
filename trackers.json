@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-18",
+    "last_updated": "2026-04-19",
     "total_count": 25,
-    "total_stars": 2669,
-    "total_forks": 152
+    "total_stars": 2690,
+    "total_forks": 154
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2128,
-      "forks": 109,
+      "stars": 2146,
+      "forks": 110,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 262,
-      "forks": 19,
+      "stars": 264,
+      "forks": 20,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -207,6 +207,16 @@
       "discovered": "2026-04-04"
     },
     {
+      "name": "mcp-cost-tracker",
+      "repo": "IgniteStudiosLtd/mcp-cost-tracker",
+      "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
+      "description": "MCP Cost Tracker for Claude Code",
+      "stars": 3,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-04-05"
+    },
+    {
       "name": "claude-tracker",
       "repo": "DSado88/claude-tracker",
       "url": "https://github.com/DSado88/claude-tracker",
@@ -225,16 +235,6 @@
       "forks": 0,
       "type": "dashboard",
       "discovered": "2026-04-04"
-    },
-    {
-      "name": "mcp-cost-tracker",
-      "repo": "IgniteStudiosLtd/mcp-cost-tracker",
-      "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
-      "description": "MCP Cost Tracker for Claude Code",
-      "stars": 2,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-04-05"
     },
     {
       "name": "claude-code-telemetry-setup",
