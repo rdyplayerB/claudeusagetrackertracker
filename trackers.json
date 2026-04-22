@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-21",
-    "total_count": 25,
-    "total_stars": 2736,
-    "total_forks": 155
+    "last_updated": "2026-04-22",
+    "total_count": 26,
+    "total_stars": 2764,
+    "total_forks": 157
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2185,
-      "forks": 111,
+      "stars": 2210,
+      "forks": 112,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -22,7 +22,7 @@
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
       "stars": 270,
-      "forks": 20,
+      "forks": 21,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -81,7 +81,7 @@
       "repo": "SteveHedden/ndoli",
       "url": "https://github.com/SteveHedden/ndoli",
       "description": "A personal knowledge graph (second brain) for Claude Code — tracks your professional network, projects, and opportunities using semantic web standards (RDF/OWL/SHACL).",
-      "stars": 9,
+      "stars": 10,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-14"
@@ -255,6 +255,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-06"
+    },
+    {
+      "name": "Claude-Usage-Tracker",
+      "repo": "sshnox/Claude-Usage-Tracker",
+      "url": "https://github.com/sshnox/Claude-Usage-Tracker",
+      "description": "A Chrome extension that puts your Claude.ai usage limits right below the chat composer. No API keys, no config, no pasted session tokens. If you're logged into Claude, it just works.",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-04-22"
     }
   ]
 }
