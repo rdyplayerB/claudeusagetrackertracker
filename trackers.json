@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-30",
-    "total_count": 28,
-    "total_stars": 2906,
-    "total_forks": 162
+    "last_updated": "2026-05-01",
+    "total_count": 30,
+    "total_stars": 2924,
+    "total_forks": 164
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2317,
-      "forks": 114,
+      "stars": 2328,
+      "forks": 115,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -31,7 +31,7 @@
       "repo": "masorange/ClaudeUsageTracker",
       "url": "https://github.com/masorange/ClaudeUsageTracker",
       "description": "Track your Claude Code API usage from your macOS menu bar with accurate cost calculations",
-      "stars": 111,
+      "stars": 112,
       "forks": 7,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -51,7 +51,7 @@
       "repo": "m-shirt/claude-code-tracker",
       "url": "https://github.com/m-shirt/claude-code-tracker",
       "description": "Self-hosted multi-user analytics dashboard for Claude Code",
-      "stars": 26,
+      "stars": 27,
       "forks": 3,
       "type": "dashboard",
       "discovered": "2026-03-15"
@@ -237,6 +237,16 @@
       "discovered": "2026-04-25"
     },
     {
+      "name": "Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "description": "",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-05-01"
+    },
+    {
       "name": "claude-tracker",
       "repo": "DSado88/claude-tracker",
       "url": "https://github.com/DSado88/claude-tracker",
@@ -285,6 +295,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-24"
+    },
+    {
+      "name": "claude-code-tracker",
+      "repo": "rohitsasi720/claude-code-tracker",
+      "url": "https://github.com/rohitsasi720/claude-code-tracker",
+      "description": "",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-05-01"
     }
   ]
 }
