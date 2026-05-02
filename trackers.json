@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-05-01",
+    "last_updated": "2026-05-02",
     "total_count": 30,
-    "total_stars": 2924,
-    "total_forks": 164
+    "total_stars": 2938,
+    "total_forks": 165
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2328,
+      "stars": 2338,
       "forks": 115,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -41,7 +41,7 @@
       "repo": "658jjh/claude-usage-tracker",
       "url": "https://github.com/658jjh/claude-usage-tracker",
       "description": "Track and visualize Claude AI usage costs across all local tools",
-      "stars": 43,
+      "stars": 42,
       "forks": 1,
       "type": "dashboard",
       "discovered": "2026-03-15"
@@ -71,7 +71,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 17,
+      "stars": 18,
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -85,6 +85,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-14"
+    },
+    {
+      "name": "Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "description": "",
+      "stars": 7,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-05-01"
     },
     {
       "name": "claude-token-tracker",
@@ -237,16 +247,6 @@
       "discovered": "2026-04-25"
     },
     {
-      "name": "Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
-      "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
-      "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
-      "description": "",
-      "stars": 3,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-05-01"
-    },
-    {
       "name": "claude-tracker",
       "repo": "DSado88/claude-tracker",
       "url": "https://github.com/DSado88/claude-tracker",
@@ -302,7 +302,7 @@
       "url": "https://github.com/rohitsasi720/claude-code-tracker",
       "description": "",
       "stars": 2,
-      "forks": 1,
+      "forks": 2,
       "type": "unknown",
       "discovered": "2026-05-01"
     }
