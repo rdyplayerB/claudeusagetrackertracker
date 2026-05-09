@@ -10,7 +10,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2399 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2405 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 297 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 112 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 42 | dashboard | Track and visualize Claude AI usage costs across all local tools |
@@ -18,7 +18,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 25 | macos-app | Happy Hacking With Claude!!! |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 20 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [ndoli](https://github.com/SteveHedden/ndoli) | 12 | unknown | A personal knowledge graph (second brain) for Claude Code — tracks your professi |
-| [Claude-Usage-Tracker-and-Prompt-Optimization-Extension](https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension) | 7 | unknown |  |
+| [Claude-Usage-Tracker-and-Prompt-Optimization-Extension](https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension) | 8 | unknown |  |
 | [claude-token-tracker](https://github.com/pepperonas/claude-token-tracker) | 7 | dashboard | Token usage dashboard for Claude Code |
 | [claude-code-tracker](https://github.com/55onurisik/claude-code-tracker) | 5 | unknown | Claude Code usage tracker |
 | [ClaudeUsageTracker](https://github.com/SergioBanuls/ClaudeUsageTracker) | 5 | unknown | Track your Claude Code API usage from your macOS menu bar |
