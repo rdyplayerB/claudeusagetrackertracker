@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-05-10",
+    "last_updated": "2026-05-11",
     "total_count": 31,
-    "total_stars": 3029,
+    "total_stars": 3038,
     "total_forks": 168
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2410,
+      "stars": 2417,
       "forks": 118,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -71,7 +71,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 20,
+      "stars": 21,
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -81,7 +81,7 @@
       "repo": "SteveHedden/ndoli",
       "url": "https://github.com/SteveHedden/ndoli",
       "description": "A personal knowledge graph (second brain) for Claude Code — tracks your professional network, projects, and opportunities using semantic web standards (RDF/OWL/SHACL).",
-      "stars": 12,
+      "stars": 13,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-14"
