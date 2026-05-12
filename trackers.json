@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-05-11",
-    "total_count": 31,
-    "total_stars": 3038,
-    "total_forks": 168
+    "last_updated": "2026-05-12",
+    "total_count": 33,
+    "total_stars": 3053,
+    "total_forks": 171
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2417,
-      "forks": 118,
+      "stars": 2426,
+      "forks": 119,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 297,
-      "forks": 23,
+      "stars": 298,
+      "forks": 24,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -71,7 +71,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 21,
+      "stars": 22,
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -315,6 +315,26 @@
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-05-01"
+    },
+    {
+      "name": "sonde",
+      "repo": "ronrefael/sonde",
+      "url": "https://github.com/ronrefael/sonde",
+      "description": "AI usage monitor for Claude Code — tracks rate limits, pacing, and capacity promotions. Menu bar app + terminal statusline.",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-05-12"
+    },
+    {
+      "name": "claude-token-tracker",
+      "repo": "sunisnotavailable/claude-token-tracker",
+      "url": "https://github.com/sunisnotavailable/claude-token-tracker",
+      "description": "A local proxy that tracks your Claude Code token usage in real time — logs every call to SQLite, view stats in terminal or Streamlit  dashboard.",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-05-12"
     }
   ]
 }
