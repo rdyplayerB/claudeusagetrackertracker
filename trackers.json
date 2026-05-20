@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-05-19",
+    "last_updated": "2026-05-20",
     "total_count": 34,
-    "total_stars": 3129,
-    "total_forks": 178
+    "total_stars": 3142,
+    "total_forks": 180
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2484,
-      "forks": 124,
+      "stars": 2495,
+      "forks": 125,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 306,
-      "forks": 25,
+      "stars": 307,
+      "forks": 26,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -111,7 +111,7 @@
       "repo": "JackBhanded/claude-meter",
       "url": "https://github.com/JackBhanded/claude-meter",
       "description": "Windows taskbar widget for live Claude usage tracking. Per-model breakdown, reset countdowns, single .exe.",
-      "stars": 6,
+      "stars": 7,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-05-17"
