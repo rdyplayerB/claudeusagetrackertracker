@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-05-20",
+    "last_updated": "2026-05-21",
     "total_count": 34,
-    "total_stars": 3142,
-    "total_forks": 180
+    "total_stars": 3154,
+    "total_forks": 181
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2495,
+      "stars": 2504,
       "forks": 125,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 307,
-      "forks": 26,
+      "stars": 308,
+      "forks": 27,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -71,7 +71,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 22,
+      "stars": 23,
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -97,6 +97,16 @@
       "discovered": "2026-05-01"
     },
     {
+      "name": "claude-meter",
+      "repo": "JackBhanded/claude-meter",
+      "url": "https://github.com/JackBhanded/claude-meter",
+      "description": "Windows taskbar widget for live Claude usage tracking. Per-model breakdown, reset countdowns, single .exe.",
+      "stars": 8,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-05-17"
+    },
+    {
       "name": "claude-token-tracker",
       "repo": "pepperonas/claude-token-tracker",
       "url": "https://github.com/pepperonas/claude-token-tracker",
@@ -105,16 +115,6 @@
       "forks": 1,
       "type": "dashboard",
       "discovered": "2026-03-15"
-    },
-    {
-      "name": "claude-meter",
-      "repo": "JackBhanded/claude-meter",
-      "url": "https://github.com/JackBhanded/claude-meter",
-      "description": "Windows taskbar widget for live Claude usage tracking. Per-model breakdown, reset countdowns, single .exe.",
-      "stars": 7,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-05-17"
     },
     {
       "name": "claude-code-tracker",
