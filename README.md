@@ -4,14 +4,14 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-35-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-36-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2557 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 315 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2571 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 316 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 49 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 27 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
@@ -45,6 +45,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [sonde](https://github.com/ronrefael/sonde) | 2 | unknown | AI usage monitor for Claude Code — tracks rate limits, pacing, and capacity prom |
 | [claude-token-tracker](https://github.com/sunisnotavailable/claude-token-tracker) | 2 | unknown | A local proxy that tracks your Claude Code token usage in real time — logs every |
 | [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 2 | unknown |  |
+| [claude-token-tracker](https://github.com/gatografiko/claude-token-tracker) | 2 | unknown | Monitor en tiempo real del uso de tokens de Claude Code en la barra de estado de |
 
 ## Types
 

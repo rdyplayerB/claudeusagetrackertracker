@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-05-28",
-    "total_count": 35,
-    "total_stars": 3225,
-    "total_forks": 190
+    "last_updated": "2026-05-29",
+    "total_count": 36,
+    "total_stars": 3242,
+    "total_forks": 192
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2557,
-      "forks": 131,
+      "stars": 2571,
+      "forks": 133,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 315,
+      "stars": 316,
       "forks": 28,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -355,6 +355,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-05-28"
+    },
+    {
+      "name": "claude-token-tracker",
+      "repo": "gatografiko/claude-token-tracker",
+      "url": "https://github.com/gatografiko/claude-token-tracker",
+      "description": "Monitor en tiempo real del uso de tokens de Claude Code en la barra de estado de VSCode. Rastrea tokens de entrada/salida, uso de caché, ventana de contexto y coste estimado. Sin API key — lee archivos JSONL locales de ~/.claude/projects/",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-05-29"
     }
   ]
 }
