@@ -10,8 +10,8 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2631 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 334 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2639 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 335 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 49 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 27 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
@@ -37,6 +37,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-token-tracker](https://github.com/imwebdev/claude-token-tracker) | 3 | unknown |  |
 | [Claude-Token-Tracker](https://github.com/binhnt20/Claude-Token-Tracker) | 3 | unknown |  |
 | [Claude-Usage-Tracker](https://github.com/sshnox/Claude-Usage-Tracker) | 3 | unknown | A Chrome extension that puts your Claude.ai usage limits right below the chat co |
+| [claude-usage-tracker-releases](https://github.com/jiyuyeon/claude-usage-tracker-releases) | 3 | unknown | Public download mirror for Claude Usage Tracker (binaries only) |
 | [claude-tracker](https://github.com/DSado88/claude-tracker) | 2 | tui | Multi-account Claude usage tracker TUI (Rust/ratatui) |
 | [cctrack](https://github.com/haoagent/cctrack) | 2 | dashboard | Real-time cost & activity dashboard for Claude Code |
 | [claude-code-telemetry-setup](https://github.com/OmriYaHoo/claude-code-telemetry-setup) | 2 | unknown | One-command Grafana dashboard for Claude Code |
@@ -47,7 +48,6 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 2 | unknown |  |
 | [claude-token-tracker](https://github.com/gatografiko/claude-token-tracker) | 2 | unknown | Monitor en tiempo real del uso de tokens de Claude Code en la barra de estado de |
 | [claude-usage-tracker](https://github.com/vampik33/claude-usage-tracker) | 2 | unknown |  |
-| [claude-usage-tracker-releases](https://github.com/jiyuyeon/claude-usage-tracker-releases) | 2 | unknown | Public download mirror for Claude Usage Tracker (binaries only) |
 
 ## Types
 
