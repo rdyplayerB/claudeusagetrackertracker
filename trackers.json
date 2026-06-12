@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-06-11",
-    "total_count": 38,
-    "total_stars": 3389,
-    "total_forks": 206
+    "last_updated": "2026-06-12",
+    "total_count": 39,
+    "total_stars": 3416,
+    "total_forks": 207
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2681,
-      "forks": 141,
+      "stars": 2703,
+      "forks": 142,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 341,
+      "stars": 344,
       "forks": 31,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -385,6 +385,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-05-31"
+    },
+    {
+      "name": "claude-token-tracker",
+      "repo": "chrishinyu/claude-token-tracker",
+      "url": "https://github.com/chrishinyu/claude-token-tracker",
+      "description": "",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-06-12"
     }
   ]
 }
