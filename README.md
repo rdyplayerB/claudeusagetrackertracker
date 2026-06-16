@@ -10,8 +10,8 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2734 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 346 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2748 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 347 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 50 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 29 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
@@ -28,11 +28,11 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-usage-tracker](https://github.com/eli-manning/claude-usage-tracker) | 5 | unknown | Claude usage tracker |
 | [Oh-My-Claude](https://github.com/hey-pals/Oh-My-Claude) | 4 | dashboard | Real-time monitoring dashboard for Claude Code |
 | [sygil](https://github.com/Mastersam07/sygil) | 4 | unknown | Real-time analytics dashboard for Claude Code |
+| [claude-code-usage-analytics](https://github.com/wangtae/claude-code-usage-analytics) | 4 | unknown | Multi-device usage monitoring dashboard for Claude Code |
 | [ClaudeUsage](https://github.com/LouisVanh/ClaudeUsage) | 3 | cli | Lightweight Claude Usage Tracker |
 | [claude-usage-tracker](https://github.com/cfranci/claude-usage-tracker) | 3 | unknown | macOS menu bar app showing Claude usage limits |
 | [claude-usage-tracker](https://github.com/haasonsaas/claude-usage-tracker) | 3 | unknown | Track and analyze Claude Code usage with rate limit awareness |
 | [claude-code-tracker](https://github.com/kelsi-andrewss/claude-code-tracker) | 3 | unknown | Claude Code usage tracker |
-| [claude-code-usage-analytics](https://github.com/wangtae/claude-code-usage-analytics) | 3 | unknown | Multi-device usage monitoring dashboard for Claude Code |
 | [mcp-cost-tracker](https://github.com/IgniteStudiosLtd/mcp-cost-tracker) | 3 | unknown | MCP Cost Tracker for Claude Code |
 | [claude-token-tracker](https://github.com/imwebdev/claude-token-tracker) | 3 | unknown |  |
 | [Claude-Token-Tracker](https://github.com/binhnt20/Claude-Token-Tracker) | 3 | unknown |  |
