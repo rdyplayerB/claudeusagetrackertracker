@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "total_count": 39,
-    "total_stars": 3513,
-    "total_forks": 218
+    "total_stars": 3530,
+    "total_forks": 219
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2788,
+      "stars": 2798,
       "forks": 151,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 349,
+      "stars": 350,
       "forks": 32,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -51,8 +51,8 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 31,
-      "forks": 5,
+      "stars": 35,
+      "forks": 6,
       "type": "unknown",
       "discovered": "2026-04-11"
     },
@@ -167,6 +167,16 @@
       "discovered": "2026-04-06"
     },
     {
+      "name": "claude-code-usage-analytics",
+      "repo": "wangtae/claude-code-usage-analytics",
+      "url": "https://github.com/wangtae/claude-code-usage-analytics",
+      "description": "Multi-device usage monitoring dashboard for Claude Code",
+      "stars": 5,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-04-04"
+    },
+    {
       "name": "Oh-My-Claude",
       "repo": "hey-pals/Oh-My-Claude",
       "url": "https://github.com/hey-pals/Oh-My-Claude",
@@ -185,16 +195,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-03-15"
-    },
-    {
-      "name": "claude-code-usage-analytics",
-      "repo": "wangtae/claude-code-usage-analytics",
-      "url": "https://github.com/wangtae/claude-code-usage-analytics",
-      "description": "Multi-device usage monitoring dashboard for Claude Code",
-      "stars": 4,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-04-04"
     },
     {
       "name": "ClaudeUsage",
@@ -297,6 +297,16 @@
       "discovered": "2026-04-04"
     },
     {
+      "name": "claude-usage-tracker",
+      "repo": "vampik33/claude-usage-tracker",
+      "url": "https://github.com/vampik33/claude-usage-tracker",
+      "description": "",
+      "stars": 3,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-05-31"
+    },
+    {
       "name": "cctrack",
       "repo": "haoagent/cctrack",
       "url": "https://github.com/haoagent/cctrack",
@@ -375,16 +385,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-05-29"
-    },
-    {
-      "name": "claude-usage-tracker",
-      "repo": "vampik33/claude-usage-tracker",
-      "url": "https://github.com/vampik33/claude-usage-tracker",
-      "description": "",
-      "stars": 2,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-05-31"
     },
     {
       "name": "claude-token-tracker",
