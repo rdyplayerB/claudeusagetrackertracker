@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-30",
+    "last_updated": "2026-07-01",
     "total_count": 39,
-    "total_stars": 3612,
+    "total_stars": 3630,
     "total_forks": 226
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2860,
+      "stars": 2872,
       "forks": 155,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 364,
+      "stars": 368,
       "forks": 33,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -41,7 +41,7 @@
       "repo": "658jjh/claude-usage-tracker",
       "url": "https://github.com/658jjh/claude-usage-tracker",
       "description": "Track and visualize Claude AI usage costs across all local tools",
-      "stars": 51,
+      "stars": 52,
       "forks": 2,
       "type": "dashboard",
       "discovered": "2026-03-15"
@@ -51,7 +51,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 41,
+      "stars": 42,
       "forks": 8,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -71,7 +71,7 @@
       "repo": "penicillin0/claude-usage-tracker-for-mac",
       "url": "https://github.com/penicillin0/claude-usage-tracker-for-mac",
       "description": "Happy Hacking With Claude!!!",
-      "stars": 25,
+      "stars": 26,
       "forks": 1,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -237,16 +237,6 @@
       "discovered": "2026-04-02"
     },
     {
-      "name": "mcp-cost-tracker",
-      "repo": "IgniteStudiosLtd/mcp-cost-tracker",
-      "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
-      "description": "MCP Cost Tracker for Claude Code",
-      "stars": 3,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-04-05"
-    },
-    {
       "name": "claude-token-tracker",
       "repo": "imwebdev/claude-token-tracker",
       "url": "https://github.com/imwebdev/claude-token-tracker",
@@ -305,6 +295,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-05-31"
+    },
+    {
+      "name": "mcp-cost-tracker",
+      "repo": "IgniteStudiosLtd/mcp-cost-tracker",
+      "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
+      "description": "MCP Cost Tracker for Claude Code",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-04-05"
     },
     {
       "name": "cctrack",
