@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-02",
+    "last_updated": "2026-07-03",
     "total_count": 40,
-    "total_stars": 3643,
-    "total_forks": 228
+    "total_stars": 3662,
+    "total_forks": 229
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2881,
-      "forks": 157,
+      "stars": 2896,
+      "forks": 158,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 370,
+      "stars": 373,
       "forks": 33,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -87,6 +87,16 @@
       "discovered": "2026-04-14"
     },
     {
+      "name": "claude-meter",
+      "repo": "JackBhanded/claude-meter",
+      "url": "https://github.com/JackBhanded/claude-meter",
+      "description": "Windows taskbar widget for live Claude usage tracking. Per-model breakdown, reset countdowns, single .exe.",
+      "stars": 10,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-05-17"
+    },
+    {
       "name": "Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
       "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
       "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
@@ -95,16 +105,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-05-01"
-    },
-    {
-      "name": "claude-meter",
-      "repo": "JackBhanded/claude-meter",
-      "url": "https://github.com/JackBhanded/claude-meter",
-      "description": "Windows taskbar widget for live Claude usage tracking. Per-model breakdown, reset countdowns, single .exe.",
-      "stars": 9,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-05-17"
     },
     {
       "name": "claude-token-tracker",
