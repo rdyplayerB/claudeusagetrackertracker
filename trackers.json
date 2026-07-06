@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-05",
+    "last_updated": "2026-07-06",
     "total_count": 40,
-    "total_stars": 3682,
-    "total_forks": 229
+    "total_stars": 3690,
+    "total_forks": 231
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2914,
-      "forks": 158,
+      "stars": 2920,
+      "forks": 159,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 374,
+      "stars": 375,
       "forks": 33,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -51,8 +51,8 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 42,
-      "forks": 8,
+      "stars": 43,
+      "forks": 9,
       "type": "unknown",
       "discovered": "2026-04-11"
     },
