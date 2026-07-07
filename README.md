@@ -10,7 +10,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2920 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2930 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 375 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 52 | dashboard | Track and visualize Claude AI usage costs across all local tools |
@@ -39,11 +39,11 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-usage-tracker-releases](https://github.com/jiyuyeon/claude-usage-tracker-releases) | 3 | unknown | Public download mirror for Claude Usage Tracker (binaries only) |
 | [claude-tracker](https://github.com/DSado88/claude-tracker) | 3 | tui | Multi-account Claude usage tracker TUI (Rust/ratatui) |
 | [claude-usage-tracker](https://github.com/vampik33/claude-usage-tracker) | 3 | unknown |  |
+| [claude-code-tracker](https://github.com/rohitsasi720/claude-code-tracker) | 3 | unknown |  |
 | [mcp-cost-tracker](https://github.com/IgniteStudiosLtd/mcp-cost-tracker) | 2 | unknown | MCP Cost Tracker for Claude Code |
 | [cctrack](https://github.com/haoagent/cctrack) | 2 | dashboard | Real-time cost & activity dashboard for Claude Code |
 | [claude-code-telemetry-setup](https://github.com/OmriYaHoo/claude-code-telemetry-setup) | 2 | unknown | One-command Grafana dashboard for Claude Code |
 | [results-db-skill](https://github.com/batikas/results-db-skill) | 2 | unknown | Results ledger skill for Claude Code — track every regression estimate across se |
-| [claude-code-tracker](https://github.com/rohitsasi720/claude-code-tracker) | 2 | unknown |  |
 | [sonde](https://github.com/ronrefael/sonde) | 2 | unknown | AI usage monitor for Claude Code — tracks rate limits, pacing, and capacity prom |
 | [claude-token-tracker](https://github.com/sunisnotavailable/claude-token-tracker) | 2 | unknown | A local proxy that tracks your Claude Code token usage in real time — logs every |
 | [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 2 | unknown |  |

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-07-06",
+    "last_updated": "2026-07-07",
     "total_count": 40,
-    "total_stars": 3690,
+    "total_stars": 3701,
     "total_forks": 231
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2920,
+      "stars": 2930,
       "forks": 159,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -297,6 +297,16 @@
       "discovered": "2026-05-31"
     },
     {
+      "name": "claude-code-tracker",
+      "repo": "rohitsasi720/claude-code-tracker",
+      "url": "https://github.com/rohitsasi720/claude-code-tracker",
+      "description": "",
+      "stars": 3,
+      "forks": 2,
+      "type": "unknown",
+      "discovered": "2026-05-01"
+    },
+    {
       "name": "mcp-cost-tracker",
       "repo": "IgniteStudiosLtd/mcp-cost-tracker",
       "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
@@ -335,16 +345,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-24"
-    },
-    {
-      "name": "claude-code-tracker",
-      "repo": "rohitsasi720/claude-code-tracker",
-      "url": "https://github.com/rohitsasi720/claude-code-tracker",
-      "description": "",
-      "stars": 2,
-      "forks": 2,
-      "type": "unknown",
-      "discovered": "2026-05-01"
     },
     {
       "name": "sonde",
