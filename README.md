@@ -10,13 +10,13 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2930 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 375 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 2952 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 376 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
-| [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 52 | dashboard | Track and visualize Claude AI usage costs across all local tools |
+| [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 53 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 43 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 28 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
-| [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 27 | macos-app | Happy Hacking With Claude!!! |
+| [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 28 | macos-app | Happy Hacking With Claude!!! |
 | [ndoli](https://github.com/SteveHedden/ndoli) | 13 | unknown | A personal knowledge graph (second brain) for Claude Code — tracks your professi |
 | [claude-meter](https://github.com/JackBhanded/claude-meter) | 10 | unknown | Windows taskbar widget for live Claude usage tracking. Per-model breakdown, rese |
 | [Claude-Usage-Tracker-and-Prompt-Optimization-Extension](https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension) | 9 | unknown |  |
