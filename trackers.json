@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-12",
+    "last_updated": "2026-07-13",
     "total_count": 41,
-    "total_stars": 3779,
-    "total_forks": 238
+    "total_stars": 3802,
+    "total_forks": 239
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 2997,
-      "forks": 162,
+      "stars": 3017,
+      "forks": 163,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 380,
+      "stars": 382,
       "forks": 36,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -101,7 +101,7 @@
       "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
       "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
       "description": "",
-      "stars": 9,
+      "stars": 10,
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-05-01"
@@ -257,16 +257,6 @@
       "discovered": "2026-05-05"
     },
     {
-      "name": "Claude-Usage-Tracker",
-      "repo": "sshnox/Claude-Usage-Tracker",
-      "url": "https://github.com/sshnox/Claude-Usage-Tracker",
-      "description": "A Chrome extension that puts your Claude.ai usage limits right below the chat composer. No API keys, no config, no pasted session tokens. If you're logged into Claude, it just works.",
-      "stars": 3,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-04-22"
-    },
-    {
       "name": "claude-usage-tracker-releases",
       "repo": "jiyuyeon/claude-usage-tracker-releases",
       "url": "https://github.com/jiyuyeon/claude-usage-tracker-releases",
@@ -315,6 +305,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-07-09"
+    },
+    {
+      "name": "Claude-Usage-Tracker-v2.1.0",
+      "repo": "sshnox/Claude-Usage-Tracker-v2.1.0",
+      "url": "https://github.com/sshnox/Claude-Usage-Tracker-v2.1.0",
+      "description": "A Chrome extension that puts your Claude.ai usage limits right below the chat composer. No API keys, no config, no pasted session tokens. If you're logged into Claude, it just works.",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-13"
     },
     {
       "name": "mcp-cost-tracker",
