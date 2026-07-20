@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-19",
-    "total_count": 41,
-    "total_stars": 3866,
-    "total_forks": 247
+    "last_updated": "2026-07-20",
+    "total_count": 43,
+    "total_stars": 3882,
+    "total_forks": 249
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3068,
-      "forks": 167,
+      "stars": 3078,
+      "forks": 169,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -87,6 +87,16 @@
       "discovered": "2026-04-14"
     },
     {
+      "name": "ClaudeQuota",
+      "repo": "Dickie2306/ClaudeQuota",
+      "url": "https://github.com/Dickie2306/ClaudeQuota",
+      "description": "Live Claude usage tracking (session & weekly limits) in your macOS menu bar at a glance!",
+      "stars": 12,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-07-09"
+    },
+    {
       "name": "claude-meter",
       "repo": "JackBhanded/claude-meter",
       "url": "https://github.com/JackBhanded/claude-meter",
@@ -105,16 +115,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-05-01"
-    },
-    {
-      "name": "ClaudeQuota",
-      "repo": "Dickie2306/ClaudeQuota",
-      "url": "https://github.com/Dickie2306/ClaudeQuota",
-      "description": "Live Claude usage tracking (session & weekly limits) in your macOS menu bar at a glance!",
-      "stars": 10,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-07-09"
     },
     {
       "name": "claude-token-tracker",
@@ -415,6 +415,26 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-07-02"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "brunellegrossmann/claude-usage-tracker",
+      "url": "https://github.com/brunellegrossmann/claude-usage-tracker",
+      "description": "Tracks Claude Code usage costs",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-20"
+    },
+    {
+      "name": "tokitty",
+      "repo": "nickwolf/tokitty",
+      "url": "https://github.com/nickwolf/tokitty",
+      "description": "Claude token tracker, with a little bit of cat...",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-20"
     }
   ]
 }
