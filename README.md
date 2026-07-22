@@ -10,8 +10,8 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3085 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 388 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3098 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 389 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 115 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 54 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 45 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
@@ -51,9 +51,9 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 2 | unknown |  |
 | [claude-token-tracker](https://github.com/gatografiko/claude-token-tracker) | 2 | unknown | Monitor en tiempo real del uso de tokens de Claude Code en la barra de estado de |
 | [claude-token-tracker](https://github.com/chrishinyu/claude-token-tracker) | 2 | unknown |  |
-| [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 2 | unknown |  |
 | [claude-usage-tracker](https://github.com/brunellegrossmann/claude-usage-tracker) | 2 | unknown | Tracks Claude Code usage costs |
 | [tokitty](https://github.com/nickwolf/tokitty) | 2 | unknown | Claude token tracker, with a little bit of cat... |
+| [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 1 | unknown |  |
 
 ## Types
 

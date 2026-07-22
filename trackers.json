@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-21",
+    "last_updated": "2026-07-22",
     "total_count": 44,
-    "total_stars": 3897,
-    "total_forks": 249
+    "total_stars": 3910,
+    "total_forks": 252
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3085,
-      "forks": 168,
+      "stars": 3098,
+      "forks": 170,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 388,
+      "stars": 389,
       "forks": 38,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -162,7 +162,7 @@
       "url": "https://github.com/teambrilliant/claude-peek",
       "description": "macOS notch status surface for Claude Code",
       "stars": 5,
-      "forks": 0,
+      "forks": 1,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -417,16 +417,6 @@
       "discovered": "2026-06-12"
     },
     {
-      "name": "claude-usage-tracker-raycast",
-      "repo": "JashanMaan28/claude-usage-tracker-raycast",
-      "url": "https://github.com/JashanMaan28/claude-usage-tracker-raycast",
-      "description": "",
-      "stars": 2,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-07-02"
-    },
-    {
       "name": "claude-usage-tracker",
       "repo": "brunellegrossmann/claude-usage-tracker",
       "url": "https://github.com/brunellegrossmann/claude-usage-tracker",
@@ -445,6 +435,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-07-20"
+    },
+    {
+      "name": "claude-usage-tracker-raycast",
+      "repo": "JashanMaan28/claude-usage-tracker-raycast",
+      "url": "https://github.com/JashanMaan28/claude-usage-tracker-raycast",
+      "description": "",
+      "stars": 1,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-02"
     }
   ]
 }
