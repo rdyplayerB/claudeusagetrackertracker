@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-22",
+    "last_updated": "2026-07-23",
     "total_count": 44,
-    "total_stars": 3910,
-    "total_forks": 252
+    "total_stars": 3924,
+    "total_forks": 251
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3098,
+      "stars": 3104,
       "forks": 170,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -22,7 +22,7 @@
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
       "stars": 389,
-      "forks": 38,
+      "forks": 37,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -81,7 +81,7 @@
       "repo": "SteveHedden/ndoli",
       "url": "https://github.com/SteveHedden/ndoli",
       "description": "A personal knowledge graph (second brain) for Claude Code — tracks your professional network, projects, and opportunities using semantic web standards (RDF/OWL/SHACL).",
-      "stars": 13,
+      "stars": 14,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-04-14"
@@ -95,6 +95,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-07-09"
+    },
+    {
+      "name": "Claude-Usage-Tracker-Extension",
+      "repo": "Himal-Joshi/Claude-Usage-Tracker-Extension",
+      "url": "https://github.com/Himal-Joshi/Claude-Usage-Tracker-Extension",
+      "description": "Claude Usage Tracker Extension a privacy-first browser tool for real-time token tracking, context monitoring, and seamless Markdown export of Claude conversations.",
+      "stars": 12,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-21"
     },
     {
       "name": "claude-meter",
@@ -185,16 +195,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-04"
-    },
-    {
-      "name": "Claude-Usage-Tracker-Extension",
-      "repo": "Himal-Joshi/Claude-Usage-Tracker-Extension",
-      "url": "https://github.com/Himal-Joshi/Claude-Usage-Tracker-Extension",
-      "description": "Claude Usage Tracker Extension a privacy-first browser tool for real-time token tracking, context monitoring, and seamless Markdown export of Claude conversations.",
-      "stars": 5,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-07-21"
     },
     {
       "name": "Oh-My-Claude",
