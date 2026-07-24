@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-23",
+    "last_updated": "2026-07-24",
     "total_count": 44,
-    "total_stars": 3924,
-    "total_forks": 251
+    "total_stars": 3937,
+    "total_forks": 252
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3104,
-      "forks": 170,
+      "stars": 3114,
+      "forks": 171,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 389,
+      "stars": 391,
       "forks": 37,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -207,6 +207,16 @@
       "discovered": "2026-03-15"
     },
     {
+      "name": "Claude-Token-Tracker",
+      "repo": "binhnt20/Claude-Token-Tracker",
+      "url": "https://github.com/binhnt20/Claude-Token-Tracker",
+      "description": "",
+      "stars": 4,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-05-05"
+    },
+    {
       "name": "sygil",
       "repo": "Mastersam07/sygil",
       "url": "https://github.com/Mastersam07/sygil",
@@ -265,16 +275,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-25"
-    },
-    {
-      "name": "Claude-Token-Tracker",
-      "repo": "binhnt20/Claude-Token-Tracker",
-      "url": "https://github.com/binhnt20/Claude-Token-Tracker",
-      "description": "",
-      "stars": 3,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-05-05"
     },
     {
       "name": "claude-usage-tracker-releases",
