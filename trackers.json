@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-07-25",
+    "last_updated": "2026-07-26",
     "total_count": 44,
-    "total_stars": 3945,
+    "total_stars": 3955,
     "total_forks": 255
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3122,
+      "stars": 3129,
       "forks": 173,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -41,7 +41,7 @@
       "repo": "658jjh/claude-usage-tracker",
       "url": "https://github.com/658jjh/claude-usage-tracker",
       "description": "Track and visualize Claude AI usage costs across all local tools",
-      "stars": 54,
+      "stars": 55,
       "forks": 3,
       "type": "dashboard",
       "discovered": "2026-03-15"
@@ -107,6 +107,16 @@
       "discovered": "2026-07-21"
     },
     {
+      "name": "Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
+      "description": "",
+      "stars": 12,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-05-01"
+    },
+    {
       "name": "claude-meter",
       "repo": "JackBhanded/claude-meter",
       "url": "https://github.com/JackBhanded/claude-meter",
@@ -115,16 +125,6 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-05-17"
-    },
-    {
-      "name": "Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
-      "repo": "B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
-      "url": "https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension",
-      "description": "",
-      "stars": 10,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-05-01"
     },
     {
       "name": "claude-token-tracker",
