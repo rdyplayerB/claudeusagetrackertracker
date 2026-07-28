@@ -10,11 +10,11 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3140 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3147 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 394 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 116 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 55 | dashboard | Track and visualize Claude AI usage costs across all local tools |
-| [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 47 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
+| [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 51 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 28 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 28 | macos-app | Happy Hacking With Claude!!! |
 | [ndoli](https://github.com/SteveHedden/ndoli) | 14 | unknown | A personal knowledge graph (second brain) for Claude Code — tracks your professi |
@@ -29,7 +29,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-peek](https://github.com/teambrilliant/claude-peek) | 5 | macos-app | macOS notch status surface for Claude Code |
 | [claude-usage-tracker](https://github.com/eli-manning/claude-usage-tracker) | 5 | unknown | Claude usage tracker |
 | [claude-code-usage-analytics](https://github.com/wangtae/claude-code-usage-analytics) | 5 | unknown | Multi-device usage monitoring dashboard for Claude Code |
-| [Oh-My-Claude](https://github.com/hey-pals/Oh-My-Claude) | 4 | dashboard | Real-time monitoring dashboard for Claude Code |
+| [Oh-My-Claude](https://github.com/hey-pals/Oh-My-Claude) | 5 | dashboard | Real-time monitoring dashboard for Claude Code |
 | [Claude-Token-Tracker](https://github.com/binhnt20/Claude-Token-Tracker) | 4 | unknown |  |
 | [sygil](https://github.com/Mastersam07/sygil) | 3 | unknown | Real-time analytics dashboard for Claude Code |
 | [ClaudeUsage](https://github.com/LouisVanh/ClaudeUsage) | 3 | cli | Lightweight Claude Usage Tracker |
