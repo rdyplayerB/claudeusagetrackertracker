@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-07-31",
-    "total_count": 44,
-    "total_stars": 4014,
-    "total_forks": 259
+    "last_updated": "2026-08-01",
+    "total_count": 45,
+    "total_stars": 4026,
+    "total_forks": 260
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3170,
+      "stars": 3179,
       "forks": 176,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -51,7 +51,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 53,
+      "stars": 54,
       "forks": 11,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -435,6 +435,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-07-20"
+    },
+    {
+      "name": "claude-maxer",
+      "repo": "ali5917/claude-maxer",
+      "url": "https://github.com/ali5917/claude-maxer",
+      "description": "Live Claude usage tracking + auto-reset for your rolling 5-hour window",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-08-01"
     },
     {
       "name": "claude-usage-tracker-raycast",
