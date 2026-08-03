@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-02",
+    "last_updated": "2026-08-03",
     "total_count": 45,
-    "total_stars": 4031,
+    "total_stars": 4042,
     "total_forks": 260
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3183,
+      "stars": 3191,
       "forks": 176,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 397,
+      "stars": 399,
       "forks": 38,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -37,6 +37,16 @@
       "discovered": "2026-03-15"
     },
     {
+      "name": "daily-watchlist",
+      "repo": "Benboerba620/daily-watchlist",
+      "url": "https://github.com/Benboerba620/daily-watchlist",
+      "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
+      "stars": 56,
+      "forks": 11,
+      "type": "unknown",
+      "discovered": "2026-04-11"
+    },
+    {
       "name": "claude-usage-tracker",
       "repo": "658jjh/claude-usage-tracker",
       "url": "https://github.com/658jjh/claude-usage-tracker",
@@ -45,16 +55,6 @@
       "forks": 4,
       "type": "dashboard",
       "discovered": "2026-03-15"
-    },
-    {
-      "name": "daily-watchlist",
-      "repo": "Benboerba620/daily-watchlist",
-      "url": "https://github.com/Benboerba620/daily-watchlist",
-      "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 55,
-      "forks": 11,
-      "type": "unknown",
-      "discovered": "2026-04-11"
     },
     {
       "name": "claude-code-tracker",
