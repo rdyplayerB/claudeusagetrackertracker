@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-03",
-    "total_count": 45,
-    "total_stars": 4042,
-    "total_forks": 260
+    "last_updated": "2026-08-04",
+    "total_count": 46,
+    "total_stars": 4051,
+    "total_forks": 263
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3191,
+      "stars": 3198,
       "forks": 176,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -22,7 +22,7 @@
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
       "stars": 399,
-      "forks": 38,
+      "forks": 40,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -445,6 +445,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-08-01"
+    },
+    {
+      "name": "job-hunting-template",
+      "repo": "canglang-social/job-hunting-template",
+      "url": "https://github.com/canglang-social/job-hunting-template",
+      "description": "A complete job-search system that runs inside Claude Code — tracker, rubric, resume pipeline, mock interviews. Run /onboard to make it yours.",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-08-04"
     },
     {
       "name": "claude-usage-tracker-raycast",
