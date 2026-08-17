@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-16",
+    "last_updated": "2026-08-17",
     "total_count": 47,
-    "total_stars": 4131,
-    "total_forks": 266
+    "total_stars": 4139,
+    "total_forks": 267
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3269,
+      "stars": 3274,
       "forks": 178,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 402,
-      "forks": 40,
+      "stars": 403,
+      "forks": 41,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -225,6 +225,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-25"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "therohanparmar/claude-usage-tracker",
+      "url": "https://github.com/therohanparmar/claude-usage-tracker",
+      "description": "Browser extension that shows your Claude usage limits in the toolbar - live badge, reset times, and desktop alerts. No API keys, fully private.",
+      "stars": 4,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-08-14"
     },
     {
       "name": "sygil",
@@ -455,16 +465,6 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-08-04"
-    },
-    {
-      "name": "claude-usage-tracker",
-      "repo": "therohanparmar/claude-usage-tracker",
-      "url": "https://github.com/therohanparmar/claude-usage-tracker",
-      "description": "Browser extension that shows your Claude usage limits in the toolbar - live badge, reset times, and desktop alerts. No API keys, fully private.",
-      "stars": 2,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-08-14"
     },
     {
       "name": "claude-usage-tracker-raycast",
