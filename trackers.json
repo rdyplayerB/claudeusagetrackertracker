@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-17",
+    "last_updated": "2026-08-18",
     "total_count": 47,
-    "total_stars": 4139,
-    "total_forks": 267
+    "total_stars": 4154,
+    "total_forks": 269
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3274,
-      "forks": 178,
+      "stars": 3282,
+      "forks": 180,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -41,7 +41,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 57,
+      "stars": 58,
       "forks": 11,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -51,7 +51,7 @@
       "repo": "658jjh/claude-usage-tracker",
       "url": "https://github.com/658jjh/claude-usage-tracker",
       "description": "Track and visualize Claude AI usage costs across all local tools",
-      "stars": 56,
+      "stars": 57,
       "forks": 4,
       "type": "dashboard",
       "discovered": "2026-03-15"
@@ -135,6 +135,16 @@
       "forks": 1,
       "type": "dashboard",
       "discovered": "2026-03-15"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "therohanparmar/claude-usage-tracker",
+      "url": "https://github.com/therohanparmar/claude-usage-tracker",
+      "description": "Browser extension that shows your Claude usage limits in the toolbar - live badge, reset times, and desktop alerts. No API keys, fully private.",
+      "stars": 9,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-08-14"
     },
     {
       "name": "claude-code-tracker",
@@ -225,16 +235,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-25"
-    },
-    {
-      "name": "claude-usage-tracker",
-      "repo": "therohanparmar/claude-usage-tracker",
-      "url": "https://github.com/therohanparmar/claude-usage-tracker",
-      "description": "Browser extension that shows your Claude usage limits in the toolbar - live badge, reset times, and desktop alerts. No API keys, fully private.",
-      "stars": 4,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-08-14"
     },
     {
       "name": "sygil",
