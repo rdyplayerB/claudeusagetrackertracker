@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-18",
+    "last_updated": "2026-08-19",
     "total_count": 47,
-    "total_stars": 4154,
-    "total_forks": 269
+    "total_stars": 4163,
+    "total_forks": 270
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3282,
-      "forks": 180,
+      "stars": 3289,
+      "forks": 181,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -41,7 +41,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 58,
+      "stars": 59,
       "forks": 11,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -337,6 +337,16 @@
       "discovered": "2026-07-13"
     },
     {
+      "name": "claude-usage-tracker",
+      "repo": "brunellegrossmann/claude-usage-tracker",
+      "url": "https://github.com/brunellegrossmann/claude-usage-tracker",
+      "description": "Tracks Claude Code usage costs",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-20"
+    },
+    {
       "name": "mcp-cost-tracker",
       "repo": "IgniteStudiosLtd/mcp-cost-tracker",
       "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
@@ -425,16 +435,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-06-12"
-    },
-    {
-      "name": "claude-usage-tracker",
-      "repo": "brunellegrossmann/claude-usage-tracker",
-      "url": "https://github.com/brunellegrossmann/claude-usage-tracker",
-      "description": "Tracks Claude Code usage costs",
-      "stars": 2,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-07-20"
     },
     {
       "name": "tokitty",
