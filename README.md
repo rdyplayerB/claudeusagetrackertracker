@@ -4,14 +4,14 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-48-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-49-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3327 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 410 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3339 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 411 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 115 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 59 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 58 | dashboard | Track and visualize Claude AI usage costs across all local tools |
@@ -57,6 +57,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-maxer](https://github.com/ali5917/claude-maxer) | 2 | unknown | Live Claude usage tracking + auto-reset for your rolling 5-hour window |
 | [job-hunting-template](https://github.com/canglang-social/job-hunting-template) | 2 | unknown | A complete job-search system that runs inside Claude Code — tracker, rubric, res |
 | [claude-code-tracker](https://github.com/Njengah/claude-code-tracker) | 2 | unknown | Claude Code cost tracking app built for teaching and demonstrating how Claude Co |
+| [claude-usage-tracker-bar](https://github.com/yettimon/claude-usage-tracker-bar) | 2 | unknown |  |
 | [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 1 | unknown |  |
 
 ## Types
