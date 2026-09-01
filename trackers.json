@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-31",
-    "total_count": 49,
-    "total_stars": 4282,
-    "total_forks": 273
+    "last_updated": "2026-09-01",
+    "total_count": 50,
+    "total_stars": 4294,
+    "total_forks": 272
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3387,
-      "forks": 180,
+      "stars": 3396,
+      "forks": 179,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -365,6 +365,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-08-24"
+    },
+    {
+      "name": "tokenflow",
+      "repo": "fardeen-fhr/tokenflow",
+      "url": "https://github.com/fardeen-fhr/tokenflow",
+      "description": "Local-first Claude usage tracker and task queue.",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-09-01"
     },
     {
       "name": "mcp-cost-tracker",

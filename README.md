@@ -4,13 +4,13 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-49-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-50-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3387 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3396 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 416 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 115 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 59 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
@@ -46,6 +46,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [Claude-Usage-Tracker-v2.1.0](https://github.com/sshnox/Claude-Usage-Tracker-v2.1.0) | 3 | unknown | A Chrome extension that puts your Claude.ai usage limits right below the chat co |
 | [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 3 | unknown |  |
 | [claude-code-tracker](https://github.com/Njengah/claude-code-tracker) | 3 | unknown | Claude Code cost tracking app built for teaching and demonstrating how Claude Co |
+| [tokenflow](https://github.com/fardeen-fhr/tokenflow) | 3 | unknown | Local-first Claude usage tracker and task queue. |
 | [mcp-cost-tracker](https://github.com/IgniteStudiosLtd/mcp-cost-tracker) | 2 | unknown | MCP Cost Tracker for Claude Code |
 | [cctrack](https://github.com/haoagent/cctrack) | 2 | dashboard | Real-time cost & activity dashboard for Claude Code |
 | [claude-code-telemetry-setup](https://github.com/OmriYaHoo/claude-code-telemetry-setup) | 2 | unknown | One-command Grafana dashboard for Claude Code |
