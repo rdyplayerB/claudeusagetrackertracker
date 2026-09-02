@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-01",
+    "last_updated": "2026-09-02",
     "total_count": 50,
-    "total_stars": 4294,
-    "total_forks": 272
+    "total_stars": 4306,
+    "total_forks": 273
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3396,
+      "stars": 3404,
       "forks": 179,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 416,
+      "stars": 417,
       "forks": 45,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -31,7 +31,7 @@
       "repo": "masorange/ClaudeUsageTracker",
       "url": "https://github.com/masorange/ClaudeUsageTracker",
       "description": "Track your Claude Code API usage from your macOS menu bar with accurate cost calculations",
-      "stars": 115,
+      "stars": 116,
       "forks": 7,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -42,7 +42,7 @@
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
       "stars": 59,
-      "forks": 11,
+      "forks": 12,
       "type": "unknown",
       "discovered": "2026-04-11"
     },
@@ -217,6 +217,16 @@
       "discovered": "2026-03-15"
     },
     {
+      "name": "tokenflow",
+      "repo": "fardeen-fhr/tokenflow",
+      "url": "https://github.com/fardeen-fhr/tokenflow",
+      "description": "Local-first Claude usage tracker and task queue.",
+      "stars": 5,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-09-01"
+    },
+    {
       "name": "Claude-Token-Tracker",
       "repo": "binhnt20/Claude-Token-Tracker",
       "url": "https://github.com/binhnt20/Claude-Token-Tracker",
@@ -365,16 +375,6 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-08-24"
-    },
-    {
-      "name": "tokenflow",
-      "repo": "fardeen-fhr/tokenflow",
-      "url": "https://github.com/fardeen-fhr/tokenflow",
-      "description": "Local-first Claude usage tracker and task queue.",
-      "stars": 3,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-09-01"
     },
     {
       "name": "mcp-cost-tracker",
