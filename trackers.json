@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-07",
+    "last_updated": "2026-09-08",
     "total_count": 50,
-    "total_stars": 4346,
-    "total_forks": 277
+    "total_stars": 4356,
+    "total_forks": 279
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3435,
-      "forks": 183,
+      "stars": 3442,
+      "forks": 185,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 424,
+      "stars": 425,
       "forks": 45,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -41,7 +41,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 59,
+      "stars": 60,
       "forks": 12,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -257,6 +257,16 @@
       "discovered": "2026-07-20"
     },
     {
+      "name": "claude-tracker",
+      "repo": "DSado88/claude-tracker",
+      "url": "https://github.com/DSado88/claude-tracker",
+      "description": "Multi-account Claude usage tracker TUI (Rust/ratatui)",
+      "stars": 4,
+      "forks": 0,
+      "type": "tui",
+      "discovered": "2026-04-04"
+    },
+    {
       "name": "sygil",
       "repo": "Mastersam07/sygil",
       "url": "https://github.com/Mastersam07/sygil",
@@ -315,16 +325,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-06-06"
-    },
-    {
-      "name": "claude-tracker",
-      "repo": "DSado88/claude-tracker",
-      "url": "https://github.com/DSado88/claude-tracker",
-      "description": "Multi-account Claude usage tracker TUI (Rust/ratatui)",
-      "stars": 3,
-      "forks": 0,
-      "type": "tui",
-      "discovered": "2026-04-04"
     },
     {
       "name": "claude-usage-tracker",
