@@ -4,24 +4,24 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-50-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-51-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3442 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 425 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3454 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 427 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 116 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 60 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
-| [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 58 | dashboard | Track and visualize Claude AI usage costs across all local tools |
+| [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 59 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 28 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 28 | macos-app | Happy Hacking With Claude!!! |
 | [ndoli](https://github.com/SteveHedden/ndoli) | 14 | unknown | A personal knowledge graph (second brain) for Claude Code — tracks your professi |
 | [Claude-Usage-Tracker-Extension](https://github.com/Himal-Joshi/Claude-Usage-Tracker-Extension) | 14 | unknown | Claude Usage Tracker Extension a privacy-first browser tool for real-time token  |
 | [ClaudeQuota](https://github.com/Dickie2306/ClaudeQuota) | 14 | unknown | Live Claude usage tracking (session & weekly limits) in your macOS menu bar at a |
 | [Claude-Usage-Tracker-and-Prompt-Optimization-Extension](https://github.com/B-Sheikh/Claude-Usage-Tracker-and-Prompt-Optimization-Extension) | 12 | unknown |  |
-| [claude-meter](https://github.com/JackBhanded/claude-meter) | 10 | unknown | Windows taskbar widget for live Claude usage tracking. Per-model breakdown, rese |
+| [claude-meter](https://github.com/JackBhanded/claude-meter) | 12 | unknown | Windows taskbar widget for live Claude usage tracking. Per-model breakdown, rese |
 | [claude-usage-tracker](https://github.com/therohanparmar/claude-usage-tracker) | 10 | unknown | Browser extension that shows your Claude usage limits in the toolbar - live badg |
 | [claude-token-tracker](https://github.com/pepperonas/claude-token-tracker) | 9 | dashboard | Token usage dashboard for Claude Code |
 | [claude-code-usage-analytics](https://github.com/wangtae/claude-code-usage-analytics) | 6 | unknown | Multi-device usage monitoring dashboard for Claude Code |
@@ -59,6 +59,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-maxer](https://github.com/ali5917/claude-maxer) | 2 | unknown | Live Claude usage tracking + auto-reset for your rolling 5-hour window |
 | [job-hunting-template](https://github.com/canglang-social/job-hunting-template) | 2 | unknown | A complete job-search system that runs inside Claude Code — tracker, rubric, res |
 | [claude-usage-tracker-bar](https://github.com/yettimon/claude-usage-tracker-bar) | 2 | unknown |  |
+| [claude-usage-tracker](https://github.com/jimdawdy-hub/claude-usage-tracker) | 2 | unknown | Local dashboard for tracking Claude Code and Claude.ai usage across multiple mac |
 | [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 1 | unknown |  |
 
 ## Types
