@@ -4,13 +4,13 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-51-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-52-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3468 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3481 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 429 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 116 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 60 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
@@ -60,6 +60,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [job-hunting-template](https://github.com/canglang-social/job-hunting-template) | 2 | unknown | A complete job-search system that runs inside Claude Code — tracker, rubric, res |
 | [claude-usage-tracker-bar](https://github.com/yettimon/claude-usage-tracker-bar) | 2 | unknown |  |
 | [claude-usage-tracker](https://github.com/jimdawdy-hub/claude-usage-tracker) | 2 | unknown | Local dashboard for tracking Claude Code and Claude.ai usage across multiple mac |
+| [claude-pet](https://github.com/uygnoey/claude-pet) | 2 | unknown | A free macOS desktop pet for Claude usage tracking, with roaming companions and  |
 | [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 1 | unknown |  |
 
 ## Types
