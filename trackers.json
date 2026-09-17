@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-09-16",
+    "last_updated": "2026-09-17",
     "total_count": 52,
-    "total_stars": 4444,
+    "total_stars": 4460,
     "total_forks": 281
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3515,
+      "stars": 3529,
       "forks": 186,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 431,
+      "stars": 432,
       "forks": 44,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -377,6 +377,16 @@
       "discovered": "2026-08-24"
     },
     {
+      "name": "tokitty",
+      "repo": "nickwolf/tokitty",
+      "url": "https://github.com/nickwolf/tokitty",
+      "description": "Claude token tracker, with a little bit of cat...",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-07-20"
+    },
+    {
       "name": "mcp-cost-tracker",
       "repo": "IgniteStudiosLtd/mcp-cost-tracker",
       "url": "https://github.com/IgniteStudiosLtd/mcp-cost-tracker",
@@ -455,16 +465,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-06-12"
-    },
-    {
-      "name": "tokitty",
-      "repo": "nickwolf/tokitty",
-      "url": "https://github.com/nickwolf/tokitty",
-      "description": "Claude token tracker, with a little bit of cat...",
-      "stars": 2,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-07-20"
     },
     {
       "name": "claude-maxer",
