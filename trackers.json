@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-17",
-    "total_count": 52,
-    "total_stars": 4460,
-    "total_forks": 281
+    "last_updated": "2026-09-18",
+    "total_count": 53,
+    "total_stars": 4468,
+    "total_forks": 282
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3529,
-      "forks": 186,
+      "stars": 3534,
+      "forks": 187,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 432,
+      "stars": 433,
       "forks": 44,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -41,7 +41,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 60,
+      "stars": 61,
       "forks": 12,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -367,16 +367,6 @@
       "discovered": "2026-05-28"
     },
     {
-      "name": "claude-code-tracker",
-      "repo": "Njengah/claude-code-tracker",
-      "url": "https://github.com/Njengah/claude-code-tracker",
-      "description": "Claude Code cost tracking app built for teaching and demonstrating how Claude Code works. ",
-      "stars": 3,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-08-24"
-    },
-    {
       "name": "tokitty",
       "repo": "nickwolf/tokitty",
       "url": "https://github.com/nickwolf/tokitty",
@@ -385,6 +375,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-07-20"
+    },
+    {
+      "name": "claude-code-tracker",
+      "repo": "Njengah/claude-code-tracker",
+      "url": "https://github.com/Njengah/claude-code-tracker",
+      "description": "Claude Code cost tracking app built for teaching and demonstrating how Claude Code works. ",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-08-24"
     },
     {
       "name": "mcp-cost-tracker",
@@ -515,6 +515,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-09-12"
+    },
+    {
+      "name": "CC-Tracker",
+      "repo": "AUCB21/CC-Tracker",
+      "url": "https://github.com/AUCB21/CC-Tracker",
+      "description": "Local middleware for Claude Code — tracks sessions, plans, tasks, prompts, tool usage and cost, with a full analytics dashboard. Next.js 16 + Supabase.",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-09-18"
     },
     {
       "name": "claude-usage-tracker-raycast",

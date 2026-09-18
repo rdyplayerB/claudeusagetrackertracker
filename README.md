@@ -4,16 +4,16 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-52-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-53-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3529 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 432 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3534 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 433 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 116 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
-| [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 60 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
+| [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 61 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 59 | dashboard | Track and visualize Claude AI usage costs across all local tools |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 28 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 28 | macos-app | Happy Hacking With Claude!!! |
@@ -46,8 +46,8 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-code-tracker](https://github.com/rohitsasi720/claude-code-tracker) | 3 | unknown |  |
 | [Claude-Usage-Tracker-v2.1.0](https://github.com/sshnox/Claude-Usage-Tracker-v2.1.0) | 3 | unknown | A Chrome extension that puts your Claude.ai usage limits right below the chat co |
 | [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 3 | unknown |  |
-| [claude-code-tracker](https://github.com/Njengah/claude-code-tracker) | 3 | unknown | Claude Code cost tracking app built for teaching and demonstrating how Claude Co |
 | [tokitty](https://github.com/nickwolf/tokitty) | 3 | unknown | Claude token tracker, with a little bit of cat... |
+| [claude-code-tracker](https://github.com/Njengah/claude-code-tracker) | 2 | unknown | Claude Code cost tracking app built for teaching and demonstrating how Claude Co |
 | [mcp-cost-tracker](https://github.com/IgniteStudiosLtd/mcp-cost-tracker) | 2 | unknown | MCP Cost Tracker for Claude Code |
 | [cctrack](https://github.com/haoagent/cctrack) | 2 | dashboard | Real-time cost & activity dashboard for Claude Code |
 | [claude-code-telemetry-setup](https://github.com/OmriYaHoo/claude-code-telemetry-setup) | 2 | unknown | One-command Grafana dashboard for Claude Code |
@@ -61,6 +61,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-usage-tracker-bar](https://github.com/yettimon/claude-usage-tracker-bar) | 2 | unknown |  |
 | [claude-usage-tracker](https://github.com/jimdawdy-hub/claude-usage-tracker) | 2 | unknown | Local dashboard for tracking Claude Code and Claude.ai usage across multiple mac |
 | [claude-pet](https://github.com/uygnoey/claude-pet) | 2 | unknown | A free macOS desktop pet for Claude usage tracking, with roaming companions and  |
+| [CC-Tracker](https://github.com/AUCB21/CC-Tracker) | 2 | unknown | Local middleware for Claude Code — tracks sessions, plans, tasks, prompts, tool  |
 | [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 1 | unknown |  |
 
 ## Types
