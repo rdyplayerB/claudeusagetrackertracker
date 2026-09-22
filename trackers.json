@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-21",
+    "last_updated": "2026-09-22",
     "total_count": 53,
-    "total_stars": 4482,
-    "total_forks": 284
+    "total_stars": 4488,
+    "total_forks": 285
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3548,
-      "forks": 188,
+      "stars": 3554,
+      "forks": 189,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -31,7 +31,7 @@
       "repo": "masorange/ClaudeUsageTracker",
       "url": "https://github.com/masorange/ClaudeUsageTracker",
       "description": "Track your Claude Code API usage from your macOS menu bar with accurate cost calculations",
-      "stars": 115,
+      "stars": 114,
       "forks": 7,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -377,6 +377,16 @@
       "discovered": "2026-07-20"
     },
     {
+      "name": "CC-Tracker",
+      "repo": "AUCB21/CC-Tracker",
+      "url": "https://github.com/AUCB21/CC-Tracker",
+      "description": "Local middleware for Claude Code — tracks sessions, plans, tasks, prompts, tool usage and cost, with a full analytics dashboard. Next.js 16 + Supabase.",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-09-18"
+    },
+    {
       "name": "claude-code-tracker",
       "repo": "Njengah/claude-code-tracker",
       "url": "https://github.com/Njengah/claude-code-tracker",
@@ -515,16 +525,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-09-12"
-    },
-    {
-      "name": "CC-Tracker",
-      "repo": "AUCB21/CC-Tracker",
-      "url": "https://github.com/AUCB21/CC-Tracker",
-      "description": "Local middleware for Claude Code — tracks sessions, plans, tasks, prompts, tool usage and cost, with a full analytics dashboard. Next.js 16 + Supabase.",
-      "stars": 2,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-09-18"
     },
     {
       "name": "claude-usage-tracker-raycast",
