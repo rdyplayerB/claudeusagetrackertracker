@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-23",
-    "total_count": 53,
-    "total_stars": 4492,
-    "total_forks": 286
+    "last_updated": "2026-09-24",
+    "total_count": 54,
+    "total_stars": 4501,
+    "total_forks": 287
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3558,
+      "stars": 3563,
       "forks": 190,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -41,7 +41,7 @@
       "repo": "Benboerba620/daily-watchlist",
       "url": "https://github.com/Benboerba620/daily-watchlist",
       "description": "AI-powered stock watchlist and daily market report workflow for Claude Code. Track movers, earnings, macro data, and generate structured investment research reports.",
-      "stars": 60,
+      "stars": 61,
       "forks": 12,
       "type": "unknown",
       "discovered": "2026-04-11"
@@ -387,6 +387,16 @@
       "discovered": "2026-09-18"
     },
     {
+      "name": "claude-usage-tracker",
+      "repo": "jimdawdy-hub/claude-usage-tracker",
+      "url": "https://github.com/jimdawdy-hub/claude-usage-tracker",
+      "description": "Local dashboard for tracking Claude Code and Claude.ai usage across multiple machines — plan vs. API cost comparison, real-time usage bars, historical analytics, and multi-device sync.",
+      "stars": 3,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-09-09"
+    },
+    {
       "name": "claude-code-tracker",
       "repo": "Njengah/claude-code-tracker",
       "url": "https://github.com/Njengah/claude-code-tracker",
@@ -507,16 +517,6 @@
       "discovered": "2026-08-26"
     },
     {
-      "name": "claude-usage-tracker",
-      "repo": "jimdawdy-hub/claude-usage-tracker",
-      "url": "https://github.com/jimdawdy-hub/claude-usage-tracker",
-      "description": "Local dashboard for tracking Claude Code and Claude.ai usage across multiple machines — plan vs. API cost comparison, real-time usage bars, historical analytics, and multi-device sync.",
-      "stars": 2,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-09-09"
-    },
-    {
       "name": "claude-pet",
       "repo": "uygnoey/claude-pet",
       "url": "https://github.com/uygnoey/claude-pet",
@@ -525,6 +525,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-09-12"
+    },
+    {
+      "name": "Claude-Token-Tracker",
+      "repo": "ColinM-sys/Claude-Token-Tracker",
+      "url": "https://github.com/ColinM-sys/Claude-Token-Tracker",
+      "description": "Local web dashboard for tracking Claude Code token usage and costs",
+      "stars": 2,
+      "forks": 1,
+      "type": "unknown",
+      "discovered": "2026-09-24"
     },
     {
       "name": "claude-usage-tracker-raycast",
