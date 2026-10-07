@@ -11,7 +11,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
 | [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3620 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 443 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 444 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 64 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 59 | dashboard | Track and visualize Claude AI usage costs across all local tools |
@@ -29,10 +29,10 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-code-tracker](https://github.com/55onurisik/claude-code-tracker) | 5 | unknown | Claude Code usage tracker |
 | [ClaudeUsageTracker](https://github.com/SergioBanuls/ClaudeUsageTracker) | 5 | unknown | Track your Claude Code API usage from your macOS menu bar |
 | [ClaudeUsageTracker](https://github.com/pratikbaid3/ClaudeUsageTracker) | 5 | unknown | Claude usage tracking app |
-| [claude-peek](https://github.com/teambrilliant/claude-peek) | 5 | macos-app | macOS notch status surface for Claude Code |
 | [claude-usage-tracker](https://github.com/eli-manning/claude-usage-tracker) | 5 | unknown | Claude usage tracker |
 | [Oh-My-Claude](https://github.com/hey-pals/Oh-My-Claude) | 5 | dashboard | Real-time monitoring dashboard for Claude Code |
 | [claude-token-tracker](https://github.com/imwebdev/claude-token-tracker) | 5 | unknown |  |
+| [claude-peek](https://github.com/teambrilliant/claude-peek) | 4 | macos-app | macOS notch status surface for Claude Code |
 | [Claude-Token-Tracker](https://github.com/binhnt20/Claude-Token-Tracker) | 4 | unknown |  |
 | [claude-usage-tracker](https://github.com/brunellegrossmann/claude-usage-tracker) | 4 | unknown | Tracks Claude Code usage costs |
 | [claude-tracker](https://github.com/DSado88/claude-tracker) | 4 | tui | Multi-account Claude usage tracker TUI (Rust/ratatui) |

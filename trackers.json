@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-06",
+    "last_updated": "2026-10-07",
     "total_count": 54,
     "total_stars": 4570,
-    "total_forks": 294
+    "total_forks": 296
   },
   "trackers": [
     {
@@ -12,7 +12,7 @@
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
       "stars": 3620,
-      "forks": 191,
+      "forks": 192,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,8 +21,8 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 443,
-      "forks": 46,
+      "stars": 444,
+      "forks": 47,
       "type": "extension",
       "discovered": "2026-03-15"
     },
@@ -197,16 +197,6 @@
       "discovered": "2026-03-15"
     },
     {
-      "name": "claude-peek",
-      "repo": "teambrilliant/claude-peek",
-      "url": "https://github.com/teambrilliant/claude-peek",
-      "description": "macOS notch status surface for Claude Code",
-      "stars": 5,
-      "forks": 2,
-      "type": "macos-app",
-      "discovered": "2026-03-15"
-    },
-    {
       "name": "claude-usage-tracker",
       "repo": "eli-manning/claude-usage-tracker",
       "url": "https://github.com/eli-manning/claude-usage-tracker",
@@ -235,6 +225,16 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-04-25"
+    },
+    {
+      "name": "claude-peek",
+      "repo": "teambrilliant/claude-peek",
+      "url": "https://github.com/teambrilliant/claude-peek",
+      "description": "macOS notch status surface for Claude Code",
+      "stars": 4,
+      "forks": 2,
+      "type": "macos-app",
+      "discovered": "2026-03-15"
     },
     {
       "name": "Claude-Token-Tracker",
