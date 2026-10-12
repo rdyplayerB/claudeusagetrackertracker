@@ -10,8 +10,8 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3634 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 449 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3645 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 452 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 64 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 59 | dashboard | Track and visualize Claude AI usage costs across all local tools |
@@ -45,10 +45,10 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-usage-tracker](https://github.com/vampik33/claude-usage-tracker) | 3 | unknown |  |
 | [claude-code-tracker](https://github.com/rohitsasi720/claude-code-tracker) | 3 | unknown |  |
 | [Claude-Usage-Tracker-v2.1.0](https://github.com/sshnox/Claude-Usage-Tracker-v2.1.0) | 3 | unknown | A Chrome extension that puts your Claude.ai usage limits right below the chat co |
-| [Claude-Usage-Tracker-Windows](https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows) | 3 | unknown |  |
 | [tokitty](https://github.com/nickwolf/tokitty) | 3 | unknown | Claude token tracker, with a little bit of cat... |
 | [CC-Tracker](https://github.com/AUCB21/CC-Tracker) | 3 | unknown | Local middleware for Claude Code — tracks sessions, plans, tasks, prompts, tool  |
 | [claude-usage-tracker](https://github.com/jimdawdy-hub/claude-usage-tracker) | 3 | unknown | Local dashboard for tracking Claude Code and Claude.ai usage across multiple mac |
+| [antigravity-usage-intelligence](https://github.com/Nir-Bhay/antigravity-usage-intelligence) | 3 | unknown | Antigravity usage tracker & live model quota monitor. Real-time Gemini & Claude  |
 | [claude-code-tracker](https://github.com/Njengah/claude-code-tracker) | 2 | unknown | Claude Code cost tracking app built for teaching and demonstrating how Claude Co |
 | [mcp-cost-tracker](https://github.com/IgniteStudiosLtd/mcp-cost-tracker) | 2 | unknown | MCP Cost Tracker for Claude Code |
 | [cctrack](https://github.com/haoagent/cctrack) | 2 | dashboard | Real-time cost & activity dashboard for Claude Code |

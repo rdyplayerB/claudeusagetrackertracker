@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-11",
+    "last_updated": "2026-10-12",
     "total_count": 53,
-    "total_stars": 4585,
-    "total_forks": 300
+    "total_stars": 4599,
+    "total_forks": 302
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3634,
-      "forks": 194,
+      "stars": 3645,
+      "forks": 195,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 449,
+      "stars": 452,
       "forks": 48,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -357,16 +357,6 @@
       "discovered": "2026-07-13"
     },
     {
-      "name": "Claude-Usage-Tracker-Windows",
-      "repo": "DamirSadykov/Claude-Usage-Tracker-Windows",
-      "url": "https://github.com/DamirSadykov/Claude-Usage-Tracker-Windows",
-      "description": "",
-      "stars": 3,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-05-28"
-    },
-    {
       "name": "tokitty",
       "repo": "nickwolf/tokitty",
       "url": "https://github.com/nickwolf/tokitty",
@@ -395,6 +385,16 @@
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-09-09"
+    },
+    {
+      "name": "antigravity-usage-intelligence",
+      "repo": "Nir-Bhay/antigravity-usage-intelligence",
+      "url": "https://github.com/Nir-Bhay/antigravity-usage-intelligence",
+      "description": "Antigravity usage tracker & live model quota monitor. Real-time Gemini & Claude token tracking, prompt cache savings, activity heatmaps & session analytics.",
+      "stars": 3,
+      "forks": 2,
+      "type": "unknown",
+      "discovered": "2026-10-12"
     },
     {
       "name": "claude-code-tracker",
