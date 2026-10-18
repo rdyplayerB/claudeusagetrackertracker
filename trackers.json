@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-17",
+    "last_updated": "2026-10-18",
     "total_count": 53,
-    "total_stars": 4626,
-    "total_forks": 304
+    "total_stars": 4628,
+    "total_forks": 305
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3666,
-      "forks": 195,
+      "stars": 3667,
+      "forks": 196,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -131,7 +131,7 @@
       "repo": "pepperonas/token-tracker",
       "url": "https://github.com/pepperonas/token-tracker",
       "description": "Token usage dashboard for Claude Code — tracks costs, sessions, models, and tools with real-time updates",
-      "stars": 11,
+      "stars": 12,
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-10-01"
