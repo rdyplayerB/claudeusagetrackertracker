@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-10-18",
-    "total_count": 53,
-    "total_stars": 4628,
+    "last_updated": "2026-10-19",
+    "total_count": 54,
+    "total_stars": 4636,
     "total_forks": 305
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3667,
+      "stars": 3673,
       "forks": 196,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -525,6 +525,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-09-24"
+    },
+    {
+      "name": "claude-usage-tracker",
+      "repo": "sherbaev/claude-usage-tracker",
+      "url": "https://github.com/sherbaev/claude-usage-tracker",
+      "description": "Claude Multi-Device Usage Tracker — track Claude 5-hour & weekly plan limits per device (laptop, desktop, server). Per-device caps, model/effort breakdown, Claude Code plugin + self-hosted dashboard.",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-10-19"
     },
     {
       "name": "claude-usage-tracker-raycast",
