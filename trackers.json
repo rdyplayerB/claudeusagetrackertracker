@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-19",
-    "total_count": 54,
-    "total_stars": 4636,
-    "total_forks": 305
+    "last_updated": "2026-10-20",
+    "total_count": 55,
+    "total_stars": 4645,
+    "total_forks": 307
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3673,
-      "forks": 196,
+      "stars": 3678,
+      "forks": 197,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 456,
+      "stars": 457,
       "forks": 49,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -397,6 +397,16 @@
       "discovered": "2026-10-12"
     },
     {
+      "name": "claude-usage-tracker",
+      "repo": "sherbaev/claude-usage-tracker",
+      "url": "https://github.com/sherbaev/claude-usage-tracker",
+      "description": "Claude Multi-Device Usage Tracker — track Claude 5-hour & weekly plan limits per device (laptop, desktop, server). Per-device caps, model/effort breakdown, Claude Code plugin + self-hosted dashboard.",
+      "stars": 3,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-10-19"
+    },
+    {
       "name": "claude-code-tracker",
       "repo": "Njengah/claude-code-tracker",
       "url": "https://github.com/Njengah/claude-code-tracker",
@@ -528,13 +538,13 @@
     },
     {
       "name": "claude-usage-tracker",
-      "repo": "sherbaev/claude-usage-tracker",
-      "url": "https://github.com/sherbaev/claude-usage-tracker",
-      "description": "Claude Multi-Device Usage Tracker — track Claude 5-hour & weekly plan limits per device (laptop, desktop, server). Per-device caps, model/effort breakdown, Claude Code plugin + self-hosted dashboard.",
+      "repo": "paris-paraskevas/claude-usage-tracker",
+      "url": "https://github.com/paris-paraskevas/claude-usage-tracker",
+      "description": "Windows tray widget + dashboard for Claude usage — 5h & weekly limits, per-session context, and burn-rate alerts. Free & open source.",
       "stars": 2,
-      "forks": 0,
+      "forks": 1,
       "type": "unknown",
-      "discovered": "2026-10-19"
+      "discovered": "2026-10-20"
     },
     {
       "name": "claude-usage-tracker-raycast",
