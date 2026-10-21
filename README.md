@@ -4,14 +4,14 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-55-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-56-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3678 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
-| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 457 | extension | Claude Usage Tracker browser extension |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3681 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 458 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 65 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 60 | dashboard | Track and visualize Claude AI usage costs across all local tools |
@@ -36,6 +36,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [Claude-Token-Tracker](https://github.com/binhnt20/Claude-Token-Tracker) | 4 | unknown |  |
 | [claude-usage-tracker](https://github.com/brunellegrossmann/claude-usage-tracker) | 4 | unknown | Tracks Claude Code usage costs |
 | [claude-tracker](https://github.com/DSado88/claude-tracker) | 4 | tui | Multi-account Claude usage tracker TUI (Rust/ratatui) |
+| [agent-speed](https://github.com/zoefix/agent-speed) | 4 | unknown | Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude  |
 | [sygil](https://github.com/Mastersam07/sygil) | 3 | unknown | Real-time analytics dashboard for Claude Code |
 | [ClaudeUsage](https://github.com/LouisVanh/ClaudeUsage) | 3 | cli | Lightweight Claude Usage Tracker |
 | [claude-usage-tracker](https://github.com/cfranci/claude-usage-tracker) | 3 | unknown | macOS menu bar app showing Claude usage limits |
