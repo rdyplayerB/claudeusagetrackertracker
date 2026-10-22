@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-10-21",
+    "last_updated": "2026-10-22",
     "total_count": 56,
-    "total_stars": 4653,
+    "total_stars": 4676,
     "total_forks": 308
   },
   "trackers": [
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3681,
+      "stars": 3687,
       "forks": 198,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -21,7 +21,7 @@
       "repo": "lugia19/Claude-Usage-Extension",
       "url": "https://github.com/lugia19/Claude-Usage-Extension",
       "description": "Claude Usage Tracker browser extension",
-      "stars": 458,
+      "stars": 459,
       "forks": 49,
       "type": "extension",
       "discovered": "2026-03-15"
@@ -75,6 +75,16 @@
       "forks": 1,
       "type": "macos-app",
       "discovered": "2026-03-15"
+    },
+    {
+      "name": "agent-speed",
+      "repo": "zoefix/agent-speed",
+      "url": "https://github.com/zoefix/agent-speed",
+      "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens per second (TPS), detect slowdowns, and monitor AI agent performance at a glance.",
+      "stars": 19,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-10-21"
     },
     {
       "name": "ndoli",
@@ -267,14 +277,14 @@
       "discovered": "2026-04-04"
     },
     {
-      "name": "agent-speed",
-      "repo": "zoefix/agent-speed",
-      "url": "https://github.com/zoefix/agent-speed",
-      "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens per second (TPS), detect slowdowns, and monitor AI agent performance at a glance.",
+      "name": "tokitty",
+      "repo": "nickwolf/tokitty",
+      "url": "https://github.com/nickwolf/tokitty",
+      "description": "Claude token tracker, with a little bit of cat...",
       "stars": 4,
       "forks": 0,
       "type": "unknown",
-      "discovered": "2026-10-21"
+      "discovered": "2026-07-20"
     },
     {
       "name": "sygil",
@@ -365,16 +375,6 @@
       "forks": 0,
       "type": "unknown",
       "discovered": "2026-07-13"
-    },
-    {
-      "name": "tokitty",
-      "repo": "nickwolf/tokitty",
-      "url": "https://github.com/nickwolf/tokitty",
-      "description": "Claude token tracker, with a little bit of cat...",
-      "stars": 3,
-      "forks": 0,
-      "type": "unknown",
-      "discovered": "2026-07-20"
     },
     {
       "name": "CC-Tracker",
