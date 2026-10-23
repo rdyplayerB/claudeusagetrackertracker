@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-22",
+    "last_updated": "2026-10-23",
     "total_count": 56,
-    "total_stars": 4676,
-    "total_forks": 308
+    "total_stars": 4686,
+    "total_forks": 312
   },
   "trackers": [
     {
@@ -11,8 +11,8 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3687,
-      "forks": 198,
+      "stars": 3692,
+      "forks": 199,
       "type": "macos-app",
       "discovered": "2026-03-15"
     },
@@ -81,8 +81,8 @@
       "repo": "zoefix/agent-speed",
       "url": "https://github.com/zoefix/agent-speed",
       "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens per second (TPS), detect slowdowns, and monitor AI agent performance at a glance.",
-      "stars": 19,
-      "forks": 0,
+      "stars": 23,
+      "forks": 2,
       "type": "unknown",
       "discovered": "2026-10-21"
     },
@@ -127,6 +127,16 @@
       "discovered": "2026-05-01"
     },
     {
+      "name": "token-tracker",
+      "repo": "pepperonas/token-tracker",
+      "url": "https://github.com/pepperonas/token-tracker",
+      "description": "Token usage dashboard for Claude Code — tracks costs, sessions, models, and tools with real-time updates",
+      "stars": 13,
+      "forks": 2,
+      "type": "unknown",
+      "discovered": "2026-10-01"
+    },
+    {
       "name": "claude-meter",
       "repo": "JackBhanded/claude-meter",
       "url": "https://github.com/JackBhanded/claude-meter",
@@ -135,16 +145,6 @@
       "forks": 2,
       "type": "unknown",
       "discovered": "2026-05-17"
-    },
-    {
-      "name": "token-tracker",
-      "repo": "pepperonas/token-tracker",
-      "url": "https://github.com/pepperonas/token-tracker",
-      "description": "Token usage dashboard for Claude Code — tracks costs, sessions, models, and tools with real-time updates",
-      "stars": 12,
-      "forks": 1,
-      "type": "unknown",
-      "discovered": "2026-10-01"
     },
     {
       "name": "claude-usage-tracker",
