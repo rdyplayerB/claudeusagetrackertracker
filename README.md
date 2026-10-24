@@ -4,20 +4,20 @@
 
 Everyone's building Claude usage trackers. This repo tracks them all.
 
-![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-56-blue)
+![Trackers Tracked](https://img.shields.io/badge/trackers_tracked-57-blue)
 
 ## The Trackers
 
 | Name | Stars | Type | Description |
 |------|-------|------|-------------|
-| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3692 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
+| [Claude-Usage-Tracker](https://github.com/hamed-elfayome/Claude-Usage-Tracker) | 3697 | macos-app | Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil |
 | [Claude-Usage-Extension](https://github.com/lugia19/Claude-Usage-Extension) | 459 | extension | Claude Usage Tracker browser extension |
 | [ClaudeUsageTracker](https://github.com/masorange/ClaudeUsageTracker) | 114 | macos-app | Track your Claude Code API usage from your macOS menu bar with accurate cost cal |
 | [daily-watchlist](https://github.com/Benboerba620/daily-watchlist) | 65 | unknown | AI-powered stock watchlist and daily market report workflow for Claude Code. Tra |
 | [claude-usage-tracker](https://github.com/658jjh/claude-usage-tracker) | 60 | dashboard | Track and visualize Claude AI usage costs across all local tools |
+| [agent-speed](https://github.com/zoefix/agent-speed) | 31 | unknown | Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude  |
 | [claude-code-tracker](https://github.com/m-shirt/claude-code-tracker) | 28 | dashboard | Self-hosted multi-user analytics dashboard for Claude Code |
 | [claude-usage-tracker-for-mac](https://github.com/penicillin0/claude-usage-tracker-for-mac) | 26 | macos-app | Happy Hacking With Claude!!! |
-| [agent-speed](https://github.com/zoefix/agent-speed) | 23 | unknown | Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude  |
 | [ndoli](https://github.com/SteveHedden/ndoli) | 14 | unknown | A personal knowledge graph (second brain) for Claude Code — tracks your professi |
 | [Claude-Usage-Tracker-Extension](https://github.com/Himal-Joshi/Claude-Usage-Tracker-Extension) | 14 | unknown | Claude Usage Tracker Extension a privacy-first browser tool for real-time token  |
 | [ClaudeQuota](https://github.com/Dickie2306/ClaudeQuota) | 14 | unknown | Live Claude usage tracking (session & weekly limits) in your macOS menu bar at a |
@@ -65,6 +65,7 @@ Everyone's building Claude usage trackers. This repo tracks them all.
 | [claude-usage-tracker-bar](https://github.com/yettimon/claude-usage-tracker-bar) | 2 | unknown |  |
 | [Claude-Token-Tracker](https://github.com/ColinM-sys/Claude-Token-Tracker) | 2 | unknown | Local web dashboard for tracking Claude Code token usage and costs |
 | [claude-usage-tracker](https://github.com/paris-paraskevas/claude-usage-tracker) | 2 | unknown | Windows tray widget + dashboard for Claude usage — 5h & weekly limits, per-sessi |
+| [Claude-Usage-Tracker-Windows](https://github.com/xMazaki/Claude-Usage-Tracker-Windows) | 2 | unknown | Real-time Claude AI usage monitoring for Windows — session limits, weekly caps & |
 | [claude-usage-tracker-raycast](https://github.com/JashanMaan28/claude-usage-tracker-raycast) | 1 | unknown |  |
 
 ## Types

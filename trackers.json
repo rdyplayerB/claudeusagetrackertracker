@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-23",
-    "total_count": 56,
-    "total_stars": 4686,
-    "total_forks": 312
+    "last_updated": "2026-10-24",
+    "total_count": 57,
+    "total_stars": 4701,
+    "total_forks": 313
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3692,
+      "stars": 3697,
       "forks": 199,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -57,6 +57,16 @@
       "discovered": "2026-03-15"
     },
     {
+      "name": "agent-speed",
+      "repo": "zoefix/agent-speed",
+      "url": "https://github.com/zoefix/agent-speed",
+      "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens per second (TPS), detect slowdowns, and monitor AI agent performance at a glance.",
+      "stars": 31,
+      "forks": 3,
+      "type": "unknown",
+      "discovered": "2026-10-21"
+    },
+    {
       "name": "claude-code-tracker",
       "repo": "m-shirt/claude-code-tracker",
       "url": "https://github.com/m-shirt/claude-code-tracker",
@@ -75,16 +85,6 @@
       "forks": 1,
       "type": "macos-app",
       "discovered": "2026-03-15"
-    },
-    {
-      "name": "agent-speed",
-      "repo": "zoefix/agent-speed",
-      "url": "https://github.com/zoefix/agent-speed",
-      "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens per second (TPS), detect slowdowns, and monitor AI agent performance at a glance.",
-      "stars": 23,
-      "forks": 2,
-      "type": "unknown",
-      "discovered": "2026-10-21"
     },
     {
       "name": "ndoli",
@@ -555,6 +555,16 @@
       "forks": 1,
       "type": "unknown",
       "discovered": "2026-10-20"
+    },
+    {
+      "name": "Claude-Usage-Tracker-Windows",
+      "repo": "xMazaki/Claude-Usage-Tracker-Windows",
+      "url": "https://github.com/xMazaki/Claude-Usage-Tracker-Windows",
+      "description": "Real-time Claude AI usage monitoring for Windows — session limits, weekly caps & API credits from your system tray. Portable .exe, no install needed.",
+      "stars": 2,
+      "forks": 0,
+      "type": "unknown",
+      "discovered": "2026-10-24"
     },
     {
       "name": "claude-usage-tracker-raycast",
