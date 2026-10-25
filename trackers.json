@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-24",
+    "last_updated": "2026-10-25",
     "total_count": 57,
-    "total_stars": 4701,
-    "total_forks": 313
+    "total_stars": 4714,
+    "total_forks": 314
   },
   "trackers": [
     {
@@ -11,7 +11,7 @@
       "repo": "hamed-elfayome/Claude-Usage-Tracker",
       "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
       "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI.",
-      "stars": 3697,
+      "stars": 3701,
       "forks": 199,
       "type": "macos-app",
       "discovered": "2026-03-15"
@@ -61,8 +61,8 @@
       "repo": "zoefix/agent-speed",
       "url": "https://github.com/zoefix/agent-speed",
       "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens per second (TPS), detect slowdowns, and monitor AI agent performance at a glance.",
-      "stars": 31,
-      "forks": 3,
+      "stars": 40,
+      "forks": 4,
       "type": "unknown",
       "discovered": "2026-10-21"
     },
